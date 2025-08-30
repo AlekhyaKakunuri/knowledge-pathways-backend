@@ -16,23 +16,29 @@ except ValueError:
     # Import credentials first
     from firebase_admin import credentials
     
-    # Use service account credentials for local development
-    cred = credentials.Certificate({
-        "type": "service_account",
-        "project_id": "educourse-6b0c9",
-        "private_key_id": "87d566411641b7beb06e458aa0d8725215eb9b9e",
-        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCHgbSk8rj11zrG\ncQWvLeYc1bPiskvA3OXDw2ihiMP8mJc88ze3wGj25HXc7kCLaWMThWKBCIC0Ddw1\ndP6oTwvQyGRbVhTRR+zcu2NpKPbwOM/xwtMloPYmwSeLyVXKe3oumHF69tEKQp/h\n6rNmcLgMDaJUwG4/tUiIiihjSZgr1D83fGQGcUcSplnrr0nnLSbIoT7mEM62hXV9\noHsf3Cnn0bWALBLMLhLdQMQeDwup0FXD+Sk6Xl+aYqTxXmv12nJP316NlJoSeb7o\n7as7V2kRd1/J8fIGC07ziGRzZSPpKVoeIxmRsfccN/3eJoUZsNGTaZU0ZiDwFYtN\nJ97TvTV3AgMBAAECggEAB5sVpx6CmDXs9B966LLEVEEAeEx2qQwdD2hj8pEpIv/z\nmTWznmo72gPHw89RqyGOsJVPipuOEc0nW47GDm9lY+Ijk+bYg0isuFUCRvBIMAKY\nVWMQk++dcV5tGFEEMjnNCVmAIR1CbXeA3t7cE/dmtTJ8tpIYfhXwTM2oZ65FTsxl\nmIE4B0JiY1DDO6kAqZHhD8OSzQ8F4+VLBAst3M0heXVRxKHQDfPW+8gjhyAT4q/M\nRwfranpIrHBZ9EJe6zxu4F7Mma9tW0jRkMmL0nw1FVdQXBgo/Zgz8PlvQ/ktgRq8\nP2/g5rq6yGCQbNRqraYWonrg5nZrOkeMEyNVwRTERQKBgQC9udUcBeV4dcAXejx/\nRC3cwnbIKWH7+ETdAq95Tq/jSggV6ivB/T8h/6QRA5yz8lKb08r/QyyJd88on83d\nmeJHqvaKczHjEMq7Bz//ZxSRvsmZoO6CbRIbHuvWXzqDHN2qKKqYWFfA6Tjnt74E\njB2RcgZZ1S8MXCbbcxnB8T3RSwKBgQC211ZyLWe/Urysi0BQUilQhWiJaengflpI\nJVPn9uSlFV0ceZn3HljU/Ce53swv7PYFdYrvlW/DpHiGiooJZK3MSfkmd9kOTAg+\nnHW12TM/U8PAbNS7k3ZLYCfCoNqY2D/DJ5qm1PRcVDzvJnQ6ZexPgX7ViGRxMXA1\n8hsiY3P9BQKBgQC02lgTBmvfkB80Qgk5J7ywG48u7oPAtMCwDMdIU4HGn+NlQHvF\nx6pOtmmm7lKKFgw5DoMLIPVrdRG8H9kVzIKu3oF1KKn9URxvfFG9HH23EK8MCyRQ\nn7gKskcNamlUYkfK1EkKP+wmsCrWd4hivU3SP2deaqEWnyFLP0TmYxgSUQKBgCpU\nB8s+/7mnKc64Hhd6Ld5aRC0ru90g4z24hog4/A3LuFaTQDWZbO9BwOCi15pwvTPe\nVl/ItKsSNGTRRcuO5z1YErn5HOLWb0IvboC+28JZXgP6LfWO2d/xTsMcAf9IcNp5\nHLBqtHd7eO/Ucyvh1KdDT12Xycj6rQOQHQAFDiERAoGAdaKsdvXpwAja7nHbWu8f\nslxyfLm/ClJfJEjXGfhcxnAf/a8HBT3v4P7KnPQXxBLQZgGOnzGzXyKEYzYKRRPv\nGUPKk1qid4JhO8aNI/dNAH5Q/6++NbtBQtSDEmidHssvCG47UIrJwyFIynHRvbvY\nxM8B5/NFetJKLXEDaZMRjBc=\n-----END PRIVATE KEY-----\n",
-        "client_email": "firebase-adminsdk-fbsvc@educourse-6b0c9.iam.gserviceaccount.com",
-        "client_id": "105509994375564584293",
-        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-        "token_uri": "https://oauth2.googleapis.com/token",
-        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40educourse-6b0c9.iam.gserviceaccount.com"
-    })
-    
-    # Initialize Firebase app with credentials
-    initialize_app(cred)
-    logger.info("✅ Firebase initialized with service account credentials")
+    # For production, use environment variables or default credentials
+    # For local development, you can set GOOGLE_APPLICATION_CREDENTIALS environment variable
+    # pointing to your service account JSON file
+    try:
+        # Try to use local service account file for development
+        import os
+        service_account_path = os.path.join(os.path.dirname(__file__), 'service-account.json')
+        if os.path.exists(service_account_path):
+            cred = credentials.Certificate(service_account_path)
+            initialize_app(cred)
+            logger.info("✅ Firebase initialized with local service account")
+        else:
+            # Try to use default credentials (for production/emulator)
+            initialize_app()
+            logger.info("✅ Firebase initialized with default credentials")
+    except Exception as e:
+        logger.warning(f"⚠️ Could not initialize Firebase: {e}")
+        try:
+            # Fallback to default credentials
+            initialize_app()
+            logger.info("✅ Firebase initialized with default credentials")
+        except Exception as fallback_error:
+            logger.error(f"❌ Failed to initialize Firebase: {fallback_error}")
 
 # Initialize Firebase Firestore client
 try:
