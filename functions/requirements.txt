@@ -1,0 +1,7 @@
+functions-framework==3.*
+firebase-admin==6.*
+firebase-functions==0.*
+supabase==2.*
+python-jose[cryptography]==3.*
+passlib[bcrypt]==1.*
+python-multipart==0.*

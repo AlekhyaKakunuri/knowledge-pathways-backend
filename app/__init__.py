@@ -1,1 +1,0 @@
-# Knowledge Pathways Backend Application
