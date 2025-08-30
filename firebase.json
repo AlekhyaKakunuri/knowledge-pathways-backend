@@ -8,10 +8,6 @@
     ],
     "rewrites": [
       {
-        "source": "/api/**",
-        "function": "api"
-      },
-      {
         "source": "**",
         "destination": "/index.html"
       }
@@ -19,6 +15,7 @@
   },
   "functions": {
     "source": "functions",
-    "runtime": "python311"
+    "runtime": "python311",
+    "codebase": "default"
   }
 }

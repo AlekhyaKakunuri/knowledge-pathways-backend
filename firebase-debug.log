@@ -1,1432 +1,0 @@
-[debug] [2025-08-30T18:22:11.286Z] ----------------------------------------------------------------------
-[debug] [2025-08-30T18:22:11.289Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jagad\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
-[debug] [2025-08-30T18:22:11.289Z] CLI Version:   14.15.1
-[debug] [2025-08-30T18:22:11.290Z] Platform:      win32
-[debug] [2025-08-30T18:22:11.290Z] Node Version:  v22.19.0
-[debug] [2025-08-30T18:22:11.290Z] Time:          Sat Aug 30 2025 23:52:11 GMT+0530 (India Standard Time)
-[debug] [2025-08-30T18:22:11.290Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2025-08-30T18:22:11.625Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2025-08-30T18:22:11.626Z] > authorizing via signed-in user (alekhyakakunuri@gmail.com)
-[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
-[debug] [2025-08-30T18:22:11.636Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-08-30T18:22:11.637Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
-[debug] [2025-08-30T18:22:11.642Z] [hub] writing locator at C:\Users\Jagad\AppData\Local\Temp\hub-educourse-6b0c9.json
-[debug] [2025-08-30T18:22:11.664Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-08-30T18:22:11.664Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-08-30T18:22:11.664Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-08-30T18:22:11.664Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
-[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
-[debug] [2025-08-30T18:22:11.688Z] defaultcredentials: writing to file C:\Users\Jagad\AppData\Roaming\firebase\alekhyakakunuri_gmail_com_application_default_credentials.json
-[debug] [2025-08-30T18:22:11.690Z] Setting GAC to C:\Users\Jagad\AppData\Roaming\firebase\alekhyakakunuri_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json"}}
-[debug] [2025-08-30T18:22:11.691Z] Checked if tokens are valid: true, expires at: 1756579926097
-[debug] [2025-08-30T18:22:11.691Z] Checked if tokens are valid: true, expires at: 1756579926097
-[debug] [2025-08-30T18:22:11.692Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/educourse-6b0c9/adminSdkConfig [none]
-[debug] [2025-08-30T18:22:12.137Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/educourse-6b0c9/adminSdkConfig 200
-[debug] [2025-08-30T18:22:12.137Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/educourse-6b0c9/adminSdkConfig {"projectId":"educourse-6b0c9","storageBucket":"educourse-6b0c9.firebasestorage.app"}
-[info] i  functions: Watching "C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\" for Cloud Functions..."}}
-[debug] [2025-08-30T18:22:12.170Z] Customer code is not Node
-[debug] [2025-08-30T18:22:12.171Z] Validating python source
-[debug] [2025-08-30T18:22:12.171Z] Building python source
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:22:12.174Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-08-30T18:22:12.181Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
-[debug] [2025-08-30T18:22:12.344Z] stdout: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Lib\site-packages\firebase_functions
-
-[debug] [2025-08-30T18:22:12.357Z] Running admin server with args: ["python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"educourse-6b0c9","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"educourse-6b0c9","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"educourse-6b0c9.firebasestorage.app\",\"projectId\":\"educourse-6b0c9\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions
-[debug] [2025-08-30T18:22:12.358Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
-[error]  * Tip: There are .env files present. Install python-dotenv to use them.
-
-[info]  * Serving Flask app 'serving'
- * Debug mode: off
-
-[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:8081
-Press CTRL+C to quit
-[error] 
-
-[debug] [2025-08-30T18:22:13.607Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\__pycache__\api.cpython-313.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\__pycache__\\api.cpython-313.pyc changed, reloading triggers"}}
-[error] 127.0.0.1 - - [30/Aug/2025 18:22:14] "GET /__/functions.yaml HTTP/1.1" 200 -
-
-[debug] [2025-08-30T18:22:14.485Z] Got response from /__/functions.yaml endpoints:
-  register:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: register
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-params: []
-requiredAPIs: []
-specVersion: v1alpha1
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:22:14] "GET /__/quitquitquit HTTP/1.1" 200 -
-
-[info] +  functions: Loaded functions definitions from source: register. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: register."}}
-[info] +  functions[us-central1-register]: http function initialized (http://127.0.0.1:5001/educourse-6b0c9/us-central1/register). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/educourse-6b0c9/us-central1/register)."}}
-[debug] [2025-08-30T18:22:14.529Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
-[info] 
-┌─────────────────────────────────────────────────────────────┐
-│ ✔  All emulators ready! It is now safe to connect your app. │
-│ i  View Emulator UI at http://127.0.0.1:4000/               │
-└─────────────────────────────────────────────────────────────┘
-
-┌───────────┬────────────────┬─────────────────────────────────┐
-│ Emulator  │ Host:Port      │ View in Emulator UI             │
-├───────────┼────────────────┼─────────────────────────────────┤
-│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
-└───────────┴────────────────┴─────────────────────────────────┘
-  Emulator Hub host: 127.0.0.1 port: 4400
-  Other reserved ports: 4500
-
-Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
- 
-[debug] [2025-08-30T18:22:14.612Z] Customer code is not Node
-[debug] [2025-08-30T18:22:14.612Z] Validating python source
-[debug] [2025-08-30T18:22:14.612Z] Building python source
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:22:14.614Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-08-30T18:22:14.619Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
-[debug] [2025-08-30T18:22:14.759Z] stdout: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Lib\site-packages\firebase_functions
-
-[debug] [2025-08-30T18:22:14.768Z] Running admin server with args: ["python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"educourse-6b0c9","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"educourse-6b0c9","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"educourse-6b0c9.firebasestorage.app\",\"projectId\":\"educourse-6b0c9\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions
-[debug] [2025-08-30T18:22:14.769Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
-[error]  * Tip: There are .env files present. Install python-dotenv to use them.
-
-[info]  * Serving Flask app 'serving'
- * Debug mode: off
-
-[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:8081
-
-[error] Press CTRL+C to quit
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:22:16] "GET /__/functions.yaml HTTP/1.1" 200 -
-
-[debug] [2025-08-30T18:22:16.935Z] Got response from /__/functions.yaml endpoints:
-  register:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: register
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-params: []
-requiredAPIs: []
-specVersion: v1alpha1
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:22:16] "GET /__/quitquitquit HTTP/1.1" 200 -
-
-[info] +  functions: Loaded functions definitions from source: register. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: register."}}
-[debug] [2025-08-30T18:22:20.912Z] [work-queue] {"queuedWork":["/educourse-6b0c9/us-central1/register-2025-08-30T18:22:20.912Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
-[debug] [2025-08-30T18:22:20.912Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/educourse-6b0c9/us-central1/register-2025-08-30T18:22:20.912Z"],"workRunningCount":1}
-[debug] [2025-08-30T18:22:20.913Z] Accepted request POST /educourse-6b0c9/us-central1/register --> us-central1-register
-[debug] [2025-08-30T18:22:20.917Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2025-08-30T18:22:20.919Z] [functions] Got req.url=/educourse-6b0c9/us-central1/register, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/educourse-6b0c9/us-central1/register, mapping to path=/"}}
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:22:20.932Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","functions-framework"]
-[debug] [2025-08-30T18:22:20.959Z] [worker-pool] addWorker(us-central1-register) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-register)"}}
-[debug] [2025-08-30T18:22:20.962Z] [worker-pool] Adding worker with key us-central1-register, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-register, total=1"}}
-[info] >  🔍 Looking for .env file at: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\.env {"user":"🔍 Looking for .env file at: C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\.env\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Looking for .env file at: C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\.env\r"}}
-[info] >  📖 Reading .env file... {"user":"📖 Reading .env file...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 📖 Reading .env file...\r"}}
-[info] >  ✅ Loaded: SUPABASE_URL = https://whzmoncahcka... {"user":"✅ Loaded: SUPABASE_URL = https://whzmoncahcka...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_URL = https://whzmoncahcka...\r"}}
-[info] >  ✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs... {"user":"✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs...\r"}}
-[info] >  ✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs... {"user":"✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs...\r"}}
-[info] >  ✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9... {"user":"✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9...\r"}}
-[info] >  🔗 Creating Supabase client... {"user":"🔗 Creating Supabase client...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔗 Creating Supabase client...\r"}}
-[info] >  🔑 Using service role key for enhanced permissions... {"user":"🔑 Using service role key for enhanced permissions...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔑 Using service role key for enhanced permissions...\r"}}
-[info] >  ✅ Supabase client created successfully {"user":"✅ Supabase client created successfully\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Supabase client created successfully\r"}}
-[info] >  ✅ Password hashing initialized with SHA-256 {"user":"✅ Password hashing initialized with SHA-256\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Password hashing initialized with SHA-256\r"}}
-[info] >   * Tip: There are .env files present. Install python-dotenv to use them. {"user":" * Tip: There are .env files present. Install python-dotenv to use them.\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Tip: There are .env files present. Install python-dotenv to use them.\r"}}
-[info] >   * Serving Flask app 'register' {"user":" * Serving Flask app 'register'\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Serving Flask app 'register'\r"}}
-[info] >   * Debug mode: on {"user":" * Debug mode: on\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Debug mode: on\r"}}
-[info] >  WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead. {"user":"WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.\r"}}
-[info] >   * Running on http://127.0.0.1:8262 {"user":" * Running on http://127.0.0.1:8262\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Running on http://127.0.0.1:8262\r"}}
-[info] >  Press CTRL+C to quit {"user":"Press CTRL+C to quit\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m Press CTRL+C to quit\r"}}
-[info] >   * Restarting with watchdog (windowsapi) {"user":" * Restarting with watchdog (windowsapi)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Restarting with watchdog (windowsapi)\r"}}
-[info] >  🔍 Looking for .env file at: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\.env {"user":"🔍 Looking for .env file at: C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\.env\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Looking for .env file at: C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\.env\r"}}
-[info] >  📖 Reading .env file... {"user":"📖 Reading .env file...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 📖 Reading .env file...\r"}}
-[info] >  ✅ Loaded: SUPABASE_URL = https://whzmoncahcka... {"user":"✅ Loaded: SUPABASE_URL = https://whzmoncahcka...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_URL = https://whzmoncahcka...\r"}}
-[info] >  ✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs... {"user":"✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs...\r"}}
-[info] >  ✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs... {"user":"✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs...\r"}}
-[info] >  ✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9... {"user":"✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9...\r"}}
-[info] >  🔗 Creating Supabase client... {"user":"🔗 Creating Supabase client...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔗 Creating Supabase client...\r"}}
-[info] >  🔑 Using service role key for enhanced permissions... {"user":"🔑 Using service role key for enhanced permissions...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔑 Using service role key for enhanced permissions...\r"}}
-[info] >  ✅ Supabase client created successfully {"user":"✅ Supabase client created successfully\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Supabase client created successfully\r"}}
-[info] >  ✅ Password hashing initialized with SHA-256 {"user":"✅ Password hashing initialized with SHA-256\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Password hashing initialized with SHA-256\r"}}
-[info] >   * Tip: There are .env files present. Install python-dotenv to use them. {"user":" * Tip: There are .env files present. Install python-dotenv to use them.\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Tip: There are .env files present. Install python-dotenv to use them.\r"}}
-[info] >   * Debugger is active! {"user":" * Debugger is active!\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Debugger is active!\r"}}
-[info] >   * Debugger PIN: 983-971-235 {"user":" * Debugger PIN: 983-971-235\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Debugger PIN: 983-971-235\r"}}
-[info] >  127.0.0.1 - - [30/Aug/2025 18:22:25] "GET /__/health HTTP/1.1" 405 - {"user":"127.0.0.1 - - [30/Aug/2025 18:22:25] \"GET /__/health HTTP/1.1\" 405 -\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 127.0.0.1 - - [30/Aug/2025 18:22:25] \"GET /__/health HTTP/1.1\" 405 -\r"}}
-[debug] [2025-08-30T18:22:25.806Z] [worker-us-central1-register-ca81c198-a597-4e0f-8f29-1b192c7556cd]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"[worker-us-central1-register-ca81c198-a597-4e0f-8f29-1b192c7556cd]: IDLE"}}
-[debug] [2025-08-30T18:22:25.806Z] [worker-pool] submitRequest(triggerId=us-central1-register) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-register)"}}
-[info] i  functions: Beginning execution of "us-central1-register" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"Beginning execution of \"us-central1-register\""}}
-[debug] [2025-08-30T18:22:25.807Z] [worker-us-central1-register-ca81c198-a597-4e0f-8f29-1b192c7556cd]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"[worker-us-central1-register-ca81c198-a597-4e0f-8f29-1b192c7556cd]: BUSY"}}
-[info] >  🔍 Starting user registration... {"user":"🔍 Starting user registration...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Starting user registration...\r"}}
-[info] >  🔍 Registration data: email=jagadeeshkakunuri@gmail.com, full_name=jagadeesh kumar {"user":"🔍 Registration data: email=jagadeeshkakunuri@gmail.com, full_name=jagadeesh kumar\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Registration data: email=jagadeeshkakunuri@gmail.com, full_name=jagadeesh kumar\r"}}
-[info] >  🔍 Hashing password... {"user":"🔍 Hashing password...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Hashing password...\r"}}
-[info] >  🔍 Password hashed: ef92b778bafe771e8924... {"user":"🔍 Password hashed: ef92b778bafe771e8924...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Password hashed: ef92b778bafe771e8924...\r"}}
-[info] >  🔍 User data prepared: {'email': 'jagadeeshkakunuri@gmail.com', 'password_hash': 'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', 'full_name': 'jagadeesh kumar', 'is_active': True, 'created_at': '2025-08-30T18:22:25.822051'} {"user":"🔍 User data prepared: {'email': 'jagadeeshkakunuri@gmail.com', 'password_hash': 'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', 'full_name': 'jagadeesh kumar', 'is_active': True, 'created_at': '2025-08-30T18:22:25.822051'}\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 User data prepared: {'email': 'jagadeeshkakunuri@gmail.com', 'password_hash': 'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', 'full_name': 'jagadeesh kumar', 'is_active': True, 'created_at': '2025-08-30T18:22:25.822051'}\r"}}
-[info] >  🔍 Supabase client available, attempting to insert user... {"user":"🔍 Supabase client available, attempting to insert user...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Supabase client available, attempting to insert user...\r"}}
-[info] >  🔍 Attempting to create users table if it doesn't exist... {"user":"🔍 Attempting to create users table if it doesn't exist...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Attempting to create users table if it doesn't exist...\r"}}
-[info] >  ⚠️ Could not create table: {'message': 'Could not find the function public.exec_sql(sql) in the schema cache', 'code': 'PGRST202', 'hint': None, 'details': 'Searched for the function public.exec_sql with parameter sql or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.'} {"user":"⚠️ Could not create table: {'message': 'Could not find the function public.exec_sql(sql) in the schema cache', 'code': 'PGRST202', 'hint': None, 'details': 'Searched for the function public.exec_sql with parameter sql or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.'}\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ⚠️ Could not create table: {'message': 'Could not find the function public.exec_sql(sql) in the schema cache', 'code': 'PGRST202', 'hint': None, 'details': 'Searched for the function public.exec_sql with parameter sql or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.'}\r"}}
-[info] >  🔍 Trying to use existing table... {"user":"🔍 Trying to use existing table...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Trying to use existing table...\r"}}
-[info] >  🔍 Attempting to insert user into users table... {"user":"🔍 Attempting to insert user into users table...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Attempting to insert user into users table...\r"}}
-[info] >  ⚠️ Insert failed: {'message': "Could not find the table 'public.users' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.courses'", 'details': None} {"user":"⚠️ Insert failed: {'message': \"Could not find the table 'public.users' in the schema cache\", 'code': 'PGRST205', 'hint': \"Perhaps you meant the table 'public.courses'\", 'details': None}\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ⚠️ Insert failed: {'message': \"Could not find the table 'public.users' in the schema cache\", 'code': 'PGRST205', 'hint': \"Perhaps you meant the table 'public.courses'\", 'details': None}\r"}}
-[info] >  ❌ Database error: {'message': "Could not find the table 'public.users' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.courses'", 'details': None} {"user":"❌ Database error: {'message': \"Could not find the table 'public.users' in the schema cache\", 'code': 'PGRST205', 'hint': \"Perhaps you meant the table 'public.courses'\", 'details': None}\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ❌ Database error: {'message': \"Could not find the table 'public.users' in the schema cache\", 'code': 'PGRST205', 'hint': \"Perhaps you meant the table 'public.courses'\", 'details': None}\r"}}
-[info] >  127.0.0.1 - - [30/Aug/2025 18:22:27] "POST / HTTP/1.1" 500 - {"user":"127.0.0.1 - - [30/Aug/2025 18:22:27] \"POST / HTTP/1.1\" 500 -\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 127.0.0.1 - - [30/Aug/2025 18:22:27] \"POST / HTTP/1.1\" 500 -\r"}}
-[debug] [2025-08-30T18:22:27.024Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"Finishing up request with event=pause"}}
-[info] i  functions: Finished "us-central1-register" in 1217.1037000000001ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"Finished \"us-central1-register\" in 1217.1037000000001ms"}}
-[debug] [2025-08-30T18:22:27.025Z] [worker-us-central1-register-ca81c198-a597-4e0f-8f29-1b192c7556cd]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"[worker-us-central1-register-ca81c198-a597-4e0f-8f29-1b192c7556cd]: IDLE"}}
-[debug] [2025-08-30T18:22:27.025Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"Finishing up request with event=finish"}}
-[debug] [2025-08-30T18:22:27.026Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"Finishing up request with event=close"}}
-[debug] [2025-08-30T18:22:27.026Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
-[debug] [2025-08-30T18:22:58.181Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\api.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py changed, reloading triggers"}}
-[info] >   * Detected change in 'C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py', reloading {"user":" * Detected change in 'C:\\\\Users\\\\Jagad\\\\OneDrive\\\\Desktop\\\\repos\\\\knowledge-pathways-backend\\\\functions\\\\api.py', reloading\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Detected change in 'C:\\\\Users\\\\Jagad\\\\OneDrive\\\\Desktop\\\\repos\\\\knowledge-pathways-backend\\\\functions\\\\api.py', reloading\r"}}
-[info] >   * Restarting with watchdog (windowsapi) {"user":" * Restarting with watchdog (windowsapi)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Restarting with watchdog (windowsapi)\r"}}
-[debug] [2025-08-30T18:22:59.196Z] Customer code is not Node
-[debug] [2025-08-30T18:22:59.197Z] Validating python source
-[debug] [2025-08-30T18:22:59.197Z] Building python source
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:22:59.200Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-08-30T18:22:59.208Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
-[debug] [2025-08-30T18:22:59.355Z] stdout: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Lib\site-packages\firebase_functions
-
-[debug] [2025-08-30T18:22:59.367Z] Running admin server with args: ["python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"educourse-6b0c9","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"educourse-6b0c9","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"educourse-6b0c9.firebasestorage.app\",\"projectId\":\"educourse-6b0c9\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions
-[debug] [2025-08-30T18:22:59.367Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
-[info] >  🔍 Looking for .env file at: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\.env {"user":"🔍 Looking for .env file at: C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\.env\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Looking for .env file at: C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\.env\r"}}
-[info] >  📖 Reading .env file... {"user":"📖 Reading .env file...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 📖 Reading .env file...\r"}}
-[info] >  ✅ Loaded: SUPABASE_URL = https://whzmoncahcka... {"user":"✅ Loaded: SUPABASE_URL = https://whzmoncahcka...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_URL = https://whzmoncahcka...\r"}}
-[info] >  ✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs... {"user":"✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs...\r"}}
-[info] >  ✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs... {"user":"✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs...\r"}}
-[info] >  ✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9... {"user":"✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9...\r"}}
-[debug] [2025-08-30T18:22:59.634Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\__pycache__\api.cpython-313.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\__pycache__\\api.cpython-313.pyc changed, reloading triggers"}}
-[info] >  🔗 Creating Supabase client... {"user":"🔗 Creating Supabase client...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔗 Creating Supabase client...\r"}}
-[info] >  🔑 Using service role key for enhanced permissions... {"user":"🔑 Using service role key for enhanced permissions...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔑 Using service role key for enhanced permissions...\r"}}
-[error]  * Tip: There are .env files present. Install python-dotenv to use them.
-
-[info]  * Serving Flask app 'serving'
- * Debug mode: off
-
-[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:8081
-Press CTRL+C to quit
-
-[debug] [2025-08-30T18:23:00.635Z] Customer code is not Node
-[debug] [2025-08-30T18:23:00.636Z] Validating python source
-[debug] [2025-08-30T18:23:00.636Z] Building python source
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:23:00.639Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-08-30T18:23:00.691Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
-[debug] [2025-08-30T18:23:00.950Z] stdout: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Lib\site-packages\firebase_functions
-
-[debug] [2025-08-30T18:23:00.964Z] Running admin server with args: ["python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"educourse-6b0c9","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"educourse-6b0c9","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"educourse-6b0c9.firebasestorage.app\",\"projectId\":\"educourse-6b0c9\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json","ADMIN_PORT":"8082"} in C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions
-[debug] [2025-08-30T18:23:00.964Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
-[info] >  ✅ Supabase client created successfully {"user":"✅ Supabase client created successfully\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Supabase client created successfully\r"}}
-[info] >  ✅ Password hashing initialized with SHA-256 {"user":"✅ Password hashing initialized with SHA-256\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Password hashing initialized with SHA-256\r"}}
-[info] >   * Tip: There are .env files present. Install python-dotenv to use them. {"user":" * Tip: There are .env files present. Install python-dotenv to use them.\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Tip: There are .env files present. Install python-dotenv to use them.\r"}}
-[info] >   * Debugger is active! {"user":" * Debugger is active!\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Debugger is active!\r"}}
-[info] >   * Debugger PIN: 983-971-235 {"user":" * Debugger PIN: 983-971-235\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Debugger PIN: 983-971-235\r"}}
-[info] >   * Detected change in 'C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py', reloading {"user":" * Detected change in 'C:\\\\Users\\\\Jagad\\\\OneDrive\\\\Desktop\\\\repos\\\\knowledge-pathways-backend\\\\functions\\\\api.py', reloading\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Detected change in 'C:\\\\Users\\\\Jagad\\\\OneDrive\\\\Desktop\\\\repos\\\\knowledge-pathways-backend\\\\functions\\\\api.py', reloading\r"}}
-[info] >   * Detected change in 'C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py', reloading {"user":" * Detected change in 'C:\\\\Users\\\\Jagad\\\\OneDrive\\\\Desktop\\\\repos\\\\knowledge-pathways-backend\\\\functions\\\\api.py', reloading\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Detected change in 'C:\\\\Users\\\\Jagad\\\\OneDrive\\\\Desktop\\\\repos\\\\knowledge-pathways-backend\\\\functions\\\\api.py', reloading\r"}}
-[info] >   * Detected change in 'C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py', reloading {"user":" * Detected change in 'C:\\\\Users\\\\Jagad\\\\OneDrive\\\\Desktop\\\\repos\\\\knowledge-pathways-backend\\\\functions\\\\api.py', reloading\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Detected change in 'C:\\\\Users\\\\Jagad\\\\OneDrive\\\\Desktop\\\\repos\\\\knowledge-pathways-backend\\\\functions\\\\api.py', reloading\r"}}
-[debug] [2025-08-30T18:23:02.203Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\api.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py changed, reloading triggers"}}
-[error] 127.0.0.1 - - [30/Aug/2025 18:23:02] "GET /__/functions.yaml HTTP/1.1" 200 -
-
-[debug] [2025-08-30T18:23:02.652Z] Got response from /__/functions.yaml endpoints:
-  register:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: register
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-params: []
-requiredAPIs: []
-specVersion: v1alpha1
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:23:02] "GET /__/quitquitquit HTTP/1.1" 200 -
-
-[info] +  functions: Loaded functions definitions from source: register. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: register."}}
-[debug] [2025-08-30T18:23:02.798Z] [worker-pool] Shutting down IDLE worker (us-central1-register) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-register)"}}
-[debug] [2025-08-30T18:23:02.799Z] [worker-us-central1-register-ca81c198-a597-4e0f-8f29-1b192c7556cd]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"[worker-us-central1-register-ca81c198-a597-4e0f-8f29-1b192c7556cd]: FINISHING"}}
-[debug] [2025-08-30T18:23:02.887Z] [worker-us-central1-register-ca81c198-a597-4e0f-8f29-1b192c7556cd]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"[worker-us-central1-register-ca81c198-a597-4e0f-8f29-1b192c7556cd]: exited"}}
-[debug] [2025-08-30T18:23:02.895Z] [worker-us-central1-register-ca81c198-a597-4e0f-8f29-1b192c7556cd]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"[worker-us-central1-register-ca81c198-a597-4e0f-8f29-1b192c7556cd]: FINISHED"}}
-[debug] [2025-08-30T18:23:03.211Z] Customer code is not Node
-[debug] [2025-08-30T18:23:03.213Z] Validating python source
-[debug] [2025-08-30T18:23:03.214Z] Building python source
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:23:03.218Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-08-30T18:23:03.251Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
-[error]  * Tip: There are .env files present. Install python-dotenv to use them.
-
-[info]  * Serving Flask app 'serving'
- * Debug mode: off
-
-[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:8082
-
-[error] Press CTRL+C to quit
-
-[debug] [2025-08-30T18:23:03.485Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\__pycache__\api.cpython-313.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\__pycache__\\api.cpython-313.pyc changed, reloading triggers"}}
-[debug] [2025-08-30T18:23:03.589Z] stdout: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Lib\site-packages\firebase_functions
-
-[debug] [2025-08-30T18:23:03.614Z] Running admin server with args: ["python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"educourse-6b0c9","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"educourse-6b0c9","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"educourse-6b0c9.firebasestorage.app\",\"projectId\":\"educourse-6b0c9\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions
-[debug] [2025-08-30T18:23:03.614Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
-[debug] [2025-08-30T18:23:04.491Z] Customer code is not Node
-[debug] [2025-08-30T18:23:04.497Z] Validating python source
-[debug] [2025-08-30T18:23:04.497Z] Building python source
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:23:04.502Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-08-30T18:23:04.536Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
-[debug] [2025-08-30T18:23:05.037Z] stdout: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Lib\site-packages\firebase_functions
-
-[debug] [2025-08-30T18:23:05.131Z] Running admin server with args: ["python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"educourse-6b0c9","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"educourse-6b0c9","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"educourse-6b0c9.firebasestorage.app\",\"projectId\":\"educourse-6b0c9\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions
-[debug] [2025-08-30T18:23:05.131Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
-[error] 127.0.0.1 - - [30/Aug/2025 18:23:05] "GET /__/functions.yaml HTTP/1.1" 200 -
-
-[debug] [2025-08-30T18:23:05.943Z] Got response from /__/functions.yaml endpoints:
-  register:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: register
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-params: []
-requiredAPIs: []
-specVersion: v1alpha1
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:23:06] "GET /__/quitquitquit HTTP/1.1" 200 -
-
-[info] +  functions: Loaded functions definitions from source: register. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: register."}}
-[error]  * Tip: There are .env files present. Install python-dotenv to use them.
-
-[info]  * Serving Flask app 'serving'
- * Debug mode: off
-
-[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:8081
-Press CTRL+C to quit
-
-[error]  * Tip: There are .env files present. Install python-dotenv to use them.
-
-[info]  * Serving Flask app 'serving'
- * Debug mode: off
-
-[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:8081
-
-[error] Press CTRL+C to quit
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:23:09] "GET /__/functions.yaml HTTP/1.1" 200 -
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:23:09] "GET /__/functions.yaml HTTP/1.1" 200 -
-
-[debug] [2025-08-30T18:23:09.240Z] Got response from /__/functions.yaml endpoints:
-  register:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: register
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-params: []
-requiredAPIs: []
-specVersion: v1alpha1
-
-[debug] [2025-08-30T18:23:09.249Z] Got response from /__/functions.yaml endpoints:
-  register:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: register
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-params: []
-requiredAPIs: []
-specVersion: v1alpha1
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:23:09] "GET /__/quitquitquit HTTP/1.1" 200 -
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:23:09] "GET /__/quitquitquit HTTP/1.1" 200 -
-
-[info] +  functions: Loaded functions definitions from source: register. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: register."}}
-[debug] [2025-08-30T18:23:10.044Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\api.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py changed, reloading triggers"}}
-[debug] [2025-08-30T18:23:11.046Z] Customer code is not Node
-[debug] [2025-08-30T18:23:11.047Z] Validating python source
-[debug] [2025-08-30T18:23:11.047Z] Building python source
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:23:11.049Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-08-30T18:23:11.099Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
-[debug] [2025-08-30T18:23:11.406Z] stdout: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Lib\site-packages\firebase_functions
-
-[debug] [2025-08-30T18:23:11.426Z] Running admin server with args: ["python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"educourse-6b0c9","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"educourse-6b0c9","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"educourse-6b0c9.firebasestorage.app\",\"projectId\":\"educourse-6b0c9\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json","ADMIN_PORT":"8082"} in C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions
-[debug] [2025-08-30T18:23:11.427Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
-[debug] [2025-08-30T18:23:12.653Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\__pycache__\api.cpython-313.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\__pycache__\\api.cpython-313.pyc changed, reloading triggers"}}
-[error]  * Tip: There are .env files present. Install python-dotenv to use them.
-
-[info]  * Serving Flask app 'serving'
- * Debug mode: off
-
-[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:8082
-
-[error] Press CTRL+C to quit
-
-[debug] [2025-08-30T18:23:13.654Z] Customer code is not Node
-[debug] [2025-08-30T18:23:13.655Z] Validating python source
-[debug] [2025-08-30T18:23:13.655Z] Building python source
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:23:13.656Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-08-30T18:23:13.670Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
-[debug] [2025-08-30T18:23:13.854Z] stdout: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Lib\site-packages\firebase_functions
-
-[debug] [2025-08-30T18:23:13.877Z] Running admin server with args: ["python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"educourse-6b0c9","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"educourse-6b0c9","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"educourse-6b0c9.firebasestorage.app\",\"projectId\":\"educourse-6b0c9\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json","ADMIN_PORT":"8083"} in C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions
-[debug] [2025-08-30T18:23:13.877Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
-[error] 127.0.0.1 - - [30/Aug/2025 18:23:14] "GET /__/functions.yaml HTTP/1.1" 200 -
-
-[debug] [2025-08-30T18:23:14.441Z] Got response from /__/functions.yaml endpoints:
-  register:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: register
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-params: []
-requiredAPIs: []
-specVersion: v1alpha1
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:23:14] "GET /__/quitquitquit HTTP/1.1" 200 -
-
-[info] +  functions: Loaded functions definitions from source: register. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: register."}}
-[error]  * Tip: There are .env files present. Install python-dotenv to use them.
-
-[info]  * Serving Flask app 'serving'
- * Debug mode: off
-
-[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:8083
-
-[error] Press CTRL+C to quit
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:23:17] "GET /__/functions.yaml HTTP/1.1" 200 -
-
-[debug] [2025-08-30T18:23:17.080Z] Got response from /__/functions.yaml endpoints:
-  register:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: register
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-params: []
-requiredAPIs: []
-specVersion: v1alpha1
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:23:17] "GET /__/quitquitquit HTTP/1.1" 200 -
-
-[info] +  functions: Loaded functions definitions from source: register. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: register."}}
-[debug] [2025-08-30T18:23:26.086Z] [work-queue] {"queuedWork":["/educourse-6b0c9/us-central1/register-2025-08-30T18:23:26.086Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
-[debug] [2025-08-30T18:23:26.086Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/educourse-6b0c9/us-central1/register-2025-08-30T18:23:26.086Z"],"workRunningCount":1}
-[debug] [2025-08-30T18:23:26.086Z] Accepted request POST /educourse-6b0c9/us-central1/register --> us-central1-register
-[debug] [2025-08-30T18:23:26.090Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2025-08-30T18:23:26.090Z] [functions] Got req.url=/educourse-6b0c9/us-central1/register, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/educourse-6b0c9/us-central1/register, mapping to path=/"}}
-[debug] [2025-08-30T18:23:26.090Z] [worker-pool] Cleaned up workers for us-central1-register: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-register: 1 --> 0"}}
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:23:26.102Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","functions-framework"]
-[debug] [2025-08-30T18:23:26.106Z] [worker-pool] addWorker(us-central1-register) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-register)"}}
-[debug] [2025-08-30T18:23:26.107Z] [worker-pool] Adding worker with key us-central1-register, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-register, total=1"}}
-[info] >  🔍 Looking for .env file at: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\.env {"user":"🔍 Looking for .env file at: C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\.env\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Looking for .env file at: C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\.env\r"}}
-[info] >  📖 Reading .env file... {"user":"📖 Reading .env file...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 📖 Reading .env file...\r"}}
-[info] >  ✅ Loaded: SUPABASE_URL = https://whzmoncahcka... {"user":"✅ Loaded: SUPABASE_URL = https://whzmoncahcka...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_URL = https://whzmoncahcka...\r"}}
-[info] >  ✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs... {"user":"✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs...\r"}}
-[info] >  ✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs... {"user":"✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs...\r"}}
-[info] >  ✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9... {"user":"✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9...\r"}}
-[info] >  🔗 Creating Supabase client... {"user":"🔗 Creating Supabase client...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔗 Creating Supabase client...\r"}}
-[info] >  🔑 Using service role key for enhanced permissions... {"user":"🔑 Using service role key for enhanced permissions...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔑 Using service role key for enhanced permissions...\r"}}
-[info] >  ✅ Supabase client created successfully {"user":"✅ Supabase client created successfully\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Supabase client created successfully\r"}}
-[info] >  ✅ Password hashing initialized with SHA-256 {"user":"✅ Password hashing initialized with SHA-256\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Password hashing initialized with SHA-256\r"}}
-[info] >   * Tip: There are .env files present. Install python-dotenv to use them. {"user":" * Tip: There are .env files present. Install python-dotenv to use them.\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Tip: There are .env files present. Install python-dotenv to use them.\r"}}
-[info] >   * Serving Flask app 'register' {"user":" * Serving Flask app 'register'\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Serving Flask app 'register'\r"}}
-[info] >   * Debug mode: on {"user":" * Debug mode: on\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Debug mode: on\r"}}
-[info] >  WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead. {"user":"WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.\r"}}
-[info] >   * Running on http://127.0.0.1:9004 {"user":" * Running on http://127.0.0.1:9004\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Running on http://127.0.0.1:9004\r"}}
-[info] >  Press CTRL+C to quit {"user":"Press CTRL+C to quit\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m Press CTRL+C to quit\r"}}
-[info] >   * Restarting with watchdog (windowsapi) {"user":" * Restarting with watchdog (windowsapi)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Restarting with watchdog (windowsapi)\r"}}
-[info] >  🔍 Looking for .env file at: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\.env {"user":"🔍 Looking for .env file at: C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\.env\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Looking for .env file at: C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\.env\r"}}
-[info] >  📖 Reading .env file... {"user":"📖 Reading .env file...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 📖 Reading .env file...\r"}}
-[info] >  ✅ Loaded: SUPABASE_URL = https://whzmoncahcka... {"user":"✅ Loaded: SUPABASE_URL = https://whzmoncahcka...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_URL = https://whzmoncahcka...\r"}}
-[info] >  ✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs... {"user":"✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs...\r"}}
-[info] >  ✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs... {"user":"✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs...\r"}}
-[info] >  ✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9... {"user":"✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9...\r"}}
-[info] >  🔗 Creating Supabase client... {"user":"🔗 Creating Supabase client...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔗 Creating Supabase client...\r"}}
-[info] >  🔑 Using service role key for enhanced permissions... {"user":"🔑 Using service role key for enhanced permissions...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔑 Using service role key for enhanced permissions...\r"}}
-[info] >  ✅ Supabase client created successfully {"user":"✅ Supabase client created successfully\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Supabase client created successfully\r"}}
-[info] >  ✅ Password hashing initialized with SHA-256 {"user":"✅ Password hashing initialized with SHA-256\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Password hashing initialized with SHA-256\r"}}
-[info] >   * Tip: There are .env files present. Install python-dotenv to use them. {"user":" * Tip: There are .env files present. Install python-dotenv to use them.\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Tip: There are .env files present. Install python-dotenv to use them.\r"}}
-[info] >   * Debugger is active! {"user":" * Debugger is active!\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Debugger is active!\r"}}
-[info] >   * Debugger PIN: 983-971-235 {"user":" * Debugger PIN: 983-971-235\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Debugger PIN: 983-971-235\r"}}
-[info] >  127.0.0.1 - - [30/Aug/2025 18:23:30] "GET /__/health HTTP/1.1" 405 - {"user":"127.0.0.1 - - [30/Aug/2025 18:23:30] \"GET /__/health HTTP/1.1\" 405 -\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 127.0.0.1 - - [30/Aug/2025 18:23:30] \"GET /__/health HTTP/1.1\" 405 -\r"}}
-[debug] [2025-08-30T18:23:30.723Z] [worker-us-central1-register-7e723e5c-a6cd-4c62-abf6-7be9fff52f81]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"[worker-us-central1-register-7e723e5c-a6cd-4c62-abf6-7be9fff52f81]: IDLE"}}
-[debug] [2025-08-30T18:23:30.724Z] [worker-pool] submitRequest(triggerId=us-central1-register) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-register)"}}
-[info] i  functions: Beginning execution of "us-central1-register" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"Beginning execution of \"us-central1-register\""}}
-[debug] [2025-08-30T18:23:30.725Z] [worker-us-central1-register-7e723e5c-a6cd-4c62-abf6-7be9fff52f81]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"[worker-us-central1-register-7e723e5c-a6cd-4c62-abf6-7be9fff52f81]: BUSY"}}
-[info] >  🔍 Starting user registration... {"user":"🔍 Starting user registration...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Starting user registration...\r"}}
-[info] >  🔍 Registration data: email=jagadeeshkakunuri@gmail.com, full_name=jagadeesh kumar {"user":"🔍 Registration data: email=jagadeeshkakunuri@gmail.com, full_name=jagadeesh kumar\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Registration data: email=jagadeeshkakunuri@gmail.com, full_name=jagadeesh kumar\r"}}
-[info] >  🔍 Hashing password... {"user":"🔍 Hashing password...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Hashing password...\r"}}
-[info] >  🔍 Password hashed: ef92b778bafe771e8924... {"user":"🔍 Password hashed: ef92b778bafe771e8924...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Password hashed: ef92b778bafe771e8924...\r"}}
-[info] >  🔍 User data prepared: {'email': 'jagadeeshkakunuri@gmail.com', 'password_hash': 'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', 'full_name': 'jagadeesh kumar', 'is_active': True, 'created_at': '2025-08-30T18:23:30.731351'} {"user":"🔍 User data prepared: {'email': 'jagadeeshkakunuri@gmail.com', 'password_hash': 'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', 'full_name': 'jagadeesh kumar', 'is_active': True, 'created_at': '2025-08-30T18:23:30.731351'}\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 User data prepared: {'email': 'jagadeeshkakunuri@gmail.com', 'password_hash': 'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', 'full_name': 'jagadeesh kumar', 'is_active': True, 'created_at': '2025-08-30T18:23:30.731351'}\r"}}
-[info] >  🔍 Supabase client available, attempting to insert user... {"user":"🔍 Supabase client available, attempting to insert user...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Supabase client available, attempting to insert user...\r"}}
-[info] >  🔍 Attempting to create users table if it doesn't exist... {"user":"🔍 Attempting to create users table if it doesn't exist...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Attempting to create users table if it doesn't exist...\r"}}
-[info] >  ⚠️ Could not create table: {'message': 'Could not find the function public.exec_sql(sql) in the schema cache', 'code': 'PGRST202', 'hint': None, 'details': 'Searched for the function public.exec_sql with parameter sql or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.'} {"user":"⚠️ Could not create table: {'message': 'Could not find the function public.exec_sql(sql) in the schema cache', 'code': 'PGRST202', 'hint': None, 'details': 'Searched for the function public.exec_sql with parameter sql or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.'}\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ⚠️ Could not create table: {'message': 'Could not find the function public.exec_sql(sql) in the schema cache', 'code': 'PGRST202', 'hint': None, 'details': 'Searched for the function public.exec_sql with parameter sql or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.'}\r"}}
-[info] >  🔍 Trying to use existing table... {"user":"🔍 Trying to use existing table...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Trying to use existing table...\r"}}
-[info] >  🔍 Checking if users table exists... {"user":"🔍 Checking if users table exists...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Checking if users table exists...\r"}}
-[info] >  ⚠️ Could not check table existence: {'message': 'Could not find the function public.exec_sql(sql) in the schema cache', 'code': 'PGRST202', 'hint': None, 'details': 'Searched for the function public.exec_sql with parameter sql or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.'} {"user":"⚠️ Could not check table existence: {'message': 'Could not find the function public.exec_sql(sql) in the schema cache', 'code': 'PGRST202', 'hint': None, 'details': 'Searched for the function public.exec_sql with parameter sql or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.'}\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ⚠️ Could not check table existence: {'message': 'Could not find the function public.exec_sql(sql) in the schema cache', 'code': 'PGRST202', 'hint': None, 'details': 'Searched for the function public.exec_sql with parameter sql or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.'}\r"}}
-[info] >  🔍 Attempting to insert user into users table... {"user":"🔍 Attempting to insert user into users table...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Attempting to insert user into users table...\r"}}
-[info] >  ⚠️ Insert failed: {'message': "Could not find the table 'public.users' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.courses'", 'details': None} {"user":"⚠️ Insert failed: {'message': \"Could not find the table 'public.users' in the schema cache\", 'code': 'PGRST205', 'hint': \"Perhaps you meant the table 'public.courses'\", 'details': None}\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ⚠️ Insert failed: {'message': \"Could not find the table 'public.users' in the schema cache\", 'code': 'PGRST205', 'hint': \"Perhaps you meant the table 'public.courses'\", 'details': None}\r"}}
-[info] >  ❌ Database error: {'message': "Could not find the table 'public.users' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.courses'", 'details': None} {"user":"❌ Database error: {'message': \"Could not find the table 'public.users' in the schema cache\", 'code': 'PGRST205', 'hint': \"Perhaps you meant the table 'public.courses'\", 'details': None}\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ❌ Database error: {'message': \"Could not find the table 'public.users' in the schema cache\", 'code': 'PGRST205', 'hint': \"Perhaps you meant the table 'public.courses'\", 'details': None}\r"}}
-[info] >  127.0.0.1 - - [30/Aug/2025 18:23:31] "POST / HTTP/1.1" 500 - {"user":"127.0.0.1 - - [30/Aug/2025 18:23:31] \"POST / HTTP/1.1\" 500 -\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 127.0.0.1 - - [30/Aug/2025 18:23:31] \"POST / HTTP/1.1\" 500 -\r"}}
-[debug] [2025-08-30T18:23:31.837Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"Finishing up request with event=pause"}}
-[info] i  functions: Finished "us-central1-register" in 1112.2929ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"Finished \"us-central1-register\" in 1112.2929ms"}}
-[debug] [2025-08-30T18:23:31.838Z] [worker-us-central1-register-7e723e5c-a6cd-4c62-abf6-7be9fff52f81]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"[worker-us-central1-register-7e723e5c-a6cd-4c62-abf6-7be9fff52f81]: IDLE"}}
-[debug] [2025-08-30T18:23:31.838Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"Finishing up request with event=finish"}}
-[debug] [2025-08-30T18:23:31.839Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"Finishing up request with event=close"}}
-[debug] [2025-08-30T18:23:31.839Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
-[info] >   * Detected change in 'C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py', reloading {"user":" * Detected change in 'C:\\\\Users\\\\Jagad\\\\OneDrive\\\\Desktop\\\\repos\\\\knowledge-pathways-backend\\\\functions\\\\api.py', reloading\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Detected change in 'C:\\\\Users\\\\Jagad\\\\OneDrive\\\\Desktop\\\\repos\\\\knowledge-pathways-backend\\\\functions\\\\api.py', reloading\r"}}
-[info] >   * Detected change in 'C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py', reloading {"user":" * Detected change in 'C:\\\\Users\\\\Jagad\\\\OneDrive\\\\Desktop\\\\repos\\\\knowledge-pathways-backend\\\\functions\\\\api.py', reloading\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Detected change in 'C:\\\\Users\\\\Jagad\\\\OneDrive\\\\Desktop\\\\repos\\\\knowledge-pathways-backend\\\\functions\\\\api.py', reloading\r"}}
-[debug] [2025-08-30T18:24:06.066Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\api.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py changed, reloading triggers"}}
-[info] >   * Detected change in 'C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py', reloading {"user":" * Detected change in 'C:\\\\Users\\\\Jagad\\\\OneDrive\\\\Desktop\\\\repos\\\\knowledge-pathways-backend\\\\functions\\\\api.py', reloading\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Detected change in 'C:\\\\Users\\\\Jagad\\\\OneDrive\\\\Desktop\\\\repos\\\\knowledge-pathways-backend\\\\functions\\\\api.py', reloading\r"}}
-[info] >   * Detected change in 'C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py', reloading {"user":" * Detected change in 'C:\\\\Users\\\\Jagad\\\\OneDrive\\\\Desktop\\\\repos\\\\knowledge-pathways-backend\\\\functions\\\\api.py', reloading\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Detected change in 'C:\\\\Users\\\\Jagad\\\\OneDrive\\\\Desktop\\\\repos\\\\knowledge-pathways-backend\\\\functions\\\\api.py', reloading\r"}}
-[info] >   * Restarting with watchdog (windowsapi) {"user":" * Restarting with watchdog (windowsapi)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Restarting with watchdog (windowsapi)\r"}}
-[debug] [2025-08-30T18:24:07.081Z] Customer code is not Node
-[debug] [2025-08-30T18:24:07.082Z] Validating python source
-[debug] [2025-08-30T18:24:07.082Z] Building python source
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:24:07.084Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-08-30T18:24:07.118Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
-[debug] [2025-08-30T18:24:07.282Z] stdout: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Lib\site-packages\firebase_functions
-
-[debug] [2025-08-30T18:24:07.299Z] Running admin server with args: ["python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"educourse-6b0c9","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"educourse-6b0c9","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"educourse-6b0c9.firebasestorage.app\",\"projectId\":\"educourse-6b0c9\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json","ADMIN_PORT":"8082"} in C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions
-[debug] [2025-08-30T18:24:07.300Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
-[debug] [2025-08-30T18:24:07.386Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\api.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py changed, reloading triggers"}}
-[info] >  🔍 Looking for .env file at: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\.env {"user":"🔍 Looking for .env file at: C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\.env\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Looking for .env file at: C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\.env\r"}}
-[info] >  📖 Reading .env file... {"user":"📖 Reading .env file...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 📖 Reading .env file...\r"}}
-[info] >  ✅ Loaded: SUPABASE_URL = https://whzmoncahcka... {"user":"✅ Loaded: SUPABASE_URL = https://whzmoncahcka...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_URL = https://whzmoncahcka...\r"}}
-[info] >  ✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs... {"user":"✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs...\r"}}
-[info] >  ✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs... {"user":"✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs...\r"}}
-[info] >  ✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9... {"user":"✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9...\r"}}
-[debug] [2025-08-30T18:24:07.779Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\__pycache__\api.cpython-313.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\__pycache__\\api.cpython-313.pyc changed, reloading triggers"}}
-[info] >  🔗 Creating Supabase client... {"user":"🔗 Creating Supabase client...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔗 Creating Supabase client...\r"}}
-[info] >  🔑 Using service role key for enhanced permissions... {"user":"🔑 Using service role key for enhanced permissions...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔑 Using service role key for enhanced permissions...\r"}}
-[debug] [2025-08-30T18:24:08.790Z] Customer code is not Node
-[debug] [2025-08-30T18:24:08.793Z] Validating python source
-[debug] [2025-08-30T18:24:08.793Z] Building python source
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:24:08.874Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-08-30T18:24:08.906Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
-[error]  * Tip: There are .env files present. Install python-dotenv to use them.
-
-[info]  * Serving Flask app 'serving'
- * Debug mode: off
-
-[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
-[error] 
- * Running on http://127.0.0.1:8082
-Press CTRL+C to quit
-
-[debug] [2025-08-30T18:24:09.227Z] stdout: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Lib\site-packages\firebase_functions
-
-[debug] [2025-08-30T18:24:09.241Z] Running admin server with args: ["python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"educourse-6b0c9","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"educourse-6b0c9","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"educourse-6b0c9.firebasestorage.app\",\"projectId\":\"educourse-6b0c9\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json","ADMIN_PORT":"8082"} in C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions
-[debug] [2025-08-30T18:24:09.241Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
-[info] >  ✅ Supabase client created successfully {"user":"✅ Supabase client created successfully\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Supabase client created successfully\r"}}
-[info] >  ✅ Password hashing initialized with SHA-256 {"user":"✅ Password hashing initialized with SHA-256\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Password hashing initialized with SHA-256\r"}}
-[info] >   * Tip: There are .env files present. Install python-dotenv to use them. {"user":" * Tip: There are .env files present. Install python-dotenv to use them.\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Tip: There are .env files present. Install python-dotenv to use them.\r"}}
-[info] >   * Debugger is active! {"user":" * Debugger is active!\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Debugger is active!\r"}}
-[info] >   * Debugger PIN: 983-971-235 {"user":" * Debugger PIN: 983-971-235\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Debugger PIN: 983-971-235\r"}}
-[error]  * Tip: There are .env files present. Install python-dotenv to use them.
-
-[info]  * Serving Flask app 'serving'
- * Debug mode: off
-
-[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:8082
-
-[error] Press CTRL+C to quit
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:24:11] "GET /__/functions.yaml HTTP/1.1" 200 -
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:24:11] "GET /__/functions.yaml HTTP/1.1" 200 -
-
-[debug] [2025-08-30T18:24:11.042Z] Got response from /__/functions.yaml endpoints:
-  register:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: register
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-params: []
-requiredAPIs: []
-specVersion: v1alpha1
-
-[debug] [2025-08-30T18:24:11.047Z] Got response from /__/functions.yaml endpoints:
-  register:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: register
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-params: []
-requiredAPIs: []
-specVersion: v1alpha1
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:24:11] "GET /__/quitquitquit HTTP/1.1" 200 -
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:24:11] "GET /__/quitquitquit HTTP/1.1" 200 -
-
-[info] +  functions: Loaded functions definitions from source: register. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: register."}}
-[debug] [2025-08-30T18:24:11.093Z] [worker-pool] Shutting down IDLE worker (us-central1-register) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-register)"}}
-[debug] [2025-08-30T18:24:11.093Z] [worker-us-central1-register-7e723e5c-a6cd-4c62-abf6-7be9fff52f81]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"[worker-us-central1-register-7e723e5c-a6cd-4c62-abf6-7be9fff52f81]: FINISHING"}}
-[debug] [2025-08-30T18:24:11.095Z] [worker-us-central1-register-7e723e5c-a6cd-4c62-abf6-7be9fff52f81]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"[worker-us-central1-register-7e723e5c-a6cd-4c62-abf6-7be9fff52f81]: exited"}}
-[debug] [2025-08-30T18:24:11.096Z] [worker-us-central1-register-7e723e5c-a6cd-4c62-abf6-7be9fff52f81]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"[worker-us-central1-register-7e723e5c-a6cd-4c62-abf6-7be9fff52f81]: FINISHED"}}
-[debug] [2025-08-30T18:24:15.753Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\api.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py changed, reloading triggers"}}
-[debug] [2025-08-30T18:24:16.762Z] Customer code is not Node
-[debug] [2025-08-30T18:24:16.762Z] Validating python source
-[debug] [2025-08-30T18:24:16.762Z] Building python source
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:24:16.765Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-08-30T18:24:16.782Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
-[debug] [2025-08-30T18:24:16.995Z] stdout: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Lib\site-packages\firebase_functions
-
-[debug] [2025-08-30T18:24:17.009Z] Running admin server with args: ["python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"educourse-6b0c9","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"educourse-6b0c9","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"educourse-6b0c9.firebasestorage.app\",\"projectId\":\"educourse-6b0c9\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json","ADMIN_PORT":"8083"} in C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions
-[debug] [2025-08-30T18:24:17.010Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
-[debug] [2025-08-30T18:24:17.034Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\api.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py changed, reloading triggers"}}
-[debug] [2025-08-30T18:24:17.602Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\__pycache__\api.cpython-313.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\__pycache__\\api.cpython-313.pyc changed, reloading triggers"}}
-[debug] [2025-08-30T18:24:18.604Z] Customer code is not Node
-[debug] [2025-08-30T18:24:18.606Z] Validating python source
-[debug] [2025-08-30T18:24:18.607Z] Building python source
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:24:18.627Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-08-30T18:24:18.682Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
-[debug] [2025-08-30T18:24:18.877Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\api.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py changed, reloading triggers"}}
-[debug] [2025-08-30T18:24:19.248Z] stdout: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Lib\site-packages\firebase_functions
-
-[debug] [2025-08-30T18:24:19.311Z] Running admin server with args: ["python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"educourse-6b0c9","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"educourse-6b0c9","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"educourse-6b0c9.firebasestorage.app\",\"projectId\":\"educourse-6b0c9\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json","ADMIN_PORT":"8083"} in C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions
-[debug] [2025-08-30T18:24:19.311Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
-[debug] [2025-08-30T18:24:19.883Z] Customer code is not Node
-[debug] [2025-08-30T18:24:19.887Z] Validating python source
-[debug] [2025-08-30T18:24:19.887Z] Building python source
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:24:19.896Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-08-30T18:24:19.939Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
-[error]  * Tip: There are .env files present. Install python-dotenv to use them.
-
-[info]  * Serving Flask app 'serving'
- * Debug mode: off
-
-[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
-[error] 
- * Running on http://127.0.0.1:8083
-Press CTRL+C to quit
-
-[debug] [2025-08-30T18:24:20.352Z] stdout: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Lib\site-packages\firebase_functions
-
-[debug] [2025-08-30T18:24:20.389Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\__pycache__\api.cpython-313.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\__pycache__\\api.cpython-313.pyc changed, reloading triggers"}}
-[debug] [2025-08-30T18:24:20.412Z] Running admin server with args: ["python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"educourse-6b0c9","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"educourse-6b0c9","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"educourse-6b0c9.firebasestorage.app\",\"projectId\":\"educourse-6b0c9\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json","ADMIN_PORT":"8083"} in C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions
-[debug] [2025-08-30T18:24:20.413Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
-[debug] [2025-08-30T18:24:21.392Z] Customer code is not Node
-[debug] [2025-08-30T18:24:21.392Z] Validating python source
-[debug] [2025-08-30T18:24:21.392Z] Building python source
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:24:21.395Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-08-30T18:24:21.422Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
-[debug] [2025-08-30T18:24:21.707Z] stdout: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Lib\site-packages\firebase_functions
-
-[debug] [2025-08-30T18:24:21.725Z] Running admin server with args: ["python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"educourse-6b0c9","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"educourse-6b0c9","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"educourse-6b0c9.firebasestorage.app\",\"projectId\":\"educourse-6b0c9\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json","ADMIN_PORT":"8084"} in C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions
-[debug] [2025-08-30T18:24:21.725Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
-[error]  * Tip: There are .env files present. Install python-dotenv to use them.
-
-[info]  * Serving Flask app 'serving'
- * Debug mode: off
-
-[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:8083
-
-[error] Press CTRL+C to quit
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:24:22] "GET /__/functions.yaml HTTP/1.1" 200 -
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:24:22] "GET /__/functions.yaml HTTP/1.1" 200 -
-
-[debug] [2025-08-30T18:24:22.669Z] Got response from /__/functions.yaml endpoints:
-  register:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: register
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-params: []
-requiredAPIs: []
-specVersion: v1alpha1
-
-[debug] [2025-08-30T18:24:22.675Z] Got response from /__/functions.yaml endpoints:
-  register:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: register
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-params: []
-requiredAPIs: []
-specVersion: v1alpha1
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:24:22] "GET /__/functions.yaml HTTP/1.1" 200 -
-
-[debug] [2025-08-30T18:24:22.685Z] Got response from /__/functions.yaml endpoints:
-  register:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: register
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-params: []
-requiredAPIs: []
-specVersion: v1alpha1
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:24:22] "GET /__/quitquitquit HTTP/1.1" 200 -
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:24:22] "GET /__/quitquitquit HTTP/1.1" 200 -
-127.0.0.1 - - [30/Aug/2025 18:24:22] "GET /__/quitquitquit HTTP/1.1" 200 -
-
-[info] +  functions: Loaded functions definitions from source: register. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: register."}}
-[error]  * Tip: There are .env files present. Install python-dotenv to use them.
-
-[info]  * Serving Flask app 'serving'
- * Debug mode: off
-
-[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:8083
-Press CTRL+C to quit
-
-[error]  * Tip: There are .env files present. Install python-dotenv to use them.
-
-[info]  * Serving Flask app 'serving'
- * Debug mode: off
-
-[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:8084
-
-[error] Press CTRL+C to quit
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:24:25] "GET /__/functions.yaml HTTP/1.1" 200 -
-
-[debug] [2025-08-30T18:24:25.179Z] Got response from /__/functions.yaml endpoints:
-  register:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: register
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-params: []
-requiredAPIs: []
-specVersion: v1alpha1
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:24:25] "GET /__/quitquitquit HTTP/1.1" 200 -
-
-[info] +  functions: Loaded functions definitions from source: register. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: register."}}
-[debug] [2025-08-30T18:25:15.119Z] [work-queue] {"queuedWork":["/educourse-6b0c9/us-central1/register-2025-08-30T18:25:15.119Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
-[debug] [2025-08-30T18:25:15.120Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/educourse-6b0c9/us-central1/register-2025-08-30T18:25:15.119Z"],"workRunningCount":1}
-[debug] [2025-08-30T18:25:15.120Z] Accepted request POST /educourse-6b0c9/us-central1/register --> us-central1-register
-[debug] [2025-08-30T18:25:15.125Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2025-08-30T18:25:15.125Z] [functions] Got req.url=/educourse-6b0c9/us-central1/register, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/educourse-6b0c9/us-central1/register, mapping to path=/"}}
-[debug] [2025-08-30T18:25:15.125Z] [worker-pool] Cleaned up workers for us-central1-register: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-register: 1 --> 0"}}
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:25:15.139Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","functions-framework"]
-[debug] [2025-08-30T18:25:15.143Z] [worker-pool] addWorker(us-central1-register) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-register)"}}
-[debug] [2025-08-30T18:25:15.145Z] [worker-pool] Adding worker with key us-central1-register, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-register, total=1"}}
-[info] >  🔍 Looking for .env file at: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\.env {"user":"🔍 Looking for .env file at: C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\.env\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Looking for .env file at: C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\.env\r"}}
-[info] >  📖 Reading .env file... {"user":"📖 Reading .env file...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 📖 Reading .env file...\r"}}
-[info] >  ✅ Loaded: SUPABASE_URL = https://whzmoncahcka... {"user":"✅ Loaded: SUPABASE_URL = https://whzmoncahcka...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_URL = https://whzmoncahcka...\r"}}
-[info] >  ✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs... {"user":"✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs...\r"}}
-[info] >  ✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs... {"user":"✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs...\r"}}
-[info] >  ✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9... {"user":"✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9...\r"}}
-[info] >  🔗 Creating Supabase client... {"user":"🔗 Creating Supabase client...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔗 Creating Supabase client...\r"}}
-[info] >  🔑 Using service role key for enhanced permissions... {"user":"🔑 Using service role key for enhanced permissions...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔑 Using service role key for enhanced permissions...\r"}}
-[info] >  ✅ Supabase client created successfully {"user":"✅ Supabase client created successfully\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Supabase client created successfully\r"}}
-[info] >  ✅ Password hashing initialized with SHA-256 {"user":"✅ Password hashing initialized with SHA-256\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Password hashing initialized with SHA-256\r"}}
-[info] >   * Tip: There are .env files present. Install python-dotenv to use them. {"user":" * Tip: There are .env files present. Install python-dotenv to use them.\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Tip: There are .env files present. Install python-dotenv to use them.\r"}}
-[info] >   * Serving Flask app 'register' {"user":" * Serving Flask app 'register'\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Serving Flask app 'register'\r"}}
-[info] >   * Debug mode: on {"user":" * Debug mode: on\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Debug mode: on\r"}}
-[info] >  WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead. {"user":"WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.\r"}}
-[info] >   * Running on http://127.0.0.1:8961 {"user":" * Running on http://127.0.0.1:8961\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Running on http://127.0.0.1:8961\r"}}
-[info] >  Press CTRL+C to quit {"user":"Press CTRL+C to quit\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m Press CTRL+C to quit\r"}}
-[info] >   * Restarting with watchdog (windowsapi) {"user":" * Restarting with watchdog (windowsapi)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Restarting with watchdog (windowsapi)\r"}}
-[info] >  🔍 Looking for .env file at: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\.env {"user":"🔍 Looking for .env file at: C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\.env\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Looking for .env file at: C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\.env\r"}}
-[info] >  📖 Reading .env file... {"user":"📖 Reading .env file...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 📖 Reading .env file...\r"}}
-[info] >  ✅ Loaded: SUPABASE_URL = https://whzmoncahcka... {"user":"✅ Loaded: SUPABASE_URL = https://whzmoncahcka...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_URL = https://whzmoncahcka...\r"}}
-[info] >  ✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs... {"user":"✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs...\r"}}
-[info] >  ✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs... {"user":"✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs...\r"}}
-[info] >  ✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9... {"user":"✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9...\r"}}
-[info] >  🔗 Creating Supabase client... {"user":"🔗 Creating Supabase client...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔗 Creating Supabase client...\r"}}
-[info] >  🔑 Using service role key for enhanced permissions... {"user":"🔑 Using service role key for enhanced permissions...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔑 Using service role key for enhanced permissions...\r"}}
-[info] >  ✅ Supabase client created successfully {"user":"✅ Supabase client created successfully\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Supabase client created successfully\r"}}
-[info] >  ✅ Password hashing initialized with SHA-256 {"user":"✅ Password hashing initialized with SHA-256\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Password hashing initialized with SHA-256\r"}}
-[info] >   * Tip: There are .env files present. Install python-dotenv to use them. {"user":" * Tip: There are .env files present. Install python-dotenv to use them.\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Tip: There are .env files present. Install python-dotenv to use them.\r"}}
-[info] >   * Debugger is active! {"user":" * Debugger is active!\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Debugger is active!\r"}}
-[info] >   * Debugger PIN: 983-971-235 {"user":" * Debugger PIN: 983-971-235\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Debugger PIN: 983-971-235\r"}}
-[info] >  127.0.0.1 - - [30/Aug/2025 18:25:19] "GET /__/health HTTP/1.1" 405 - {"user":"127.0.0.1 - - [30/Aug/2025 18:25:19] \"GET /__/health HTTP/1.1\" 405 -\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 127.0.0.1 - - [30/Aug/2025 18:25:19] \"GET /__/health HTTP/1.1\" 405 -\r"}}
-[debug] [2025-08-30T18:25:19.799Z] [worker-us-central1-register-1e68df54-dcc3-45d0-89fe-90f1338c4f53]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"[worker-us-central1-register-1e68df54-dcc3-45d0-89fe-90f1338c4f53]: IDLE"}}
-[debug] [2025-08-30T18:25:19.800Z] [worker-pool] submitRequest(triggerId=us-central1-register) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-register)"}}
-[info] i  functions: Beginning execution of "us-central1-register" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"Beginning execution of \"us-central1-register\""}}
-[debug] [2025-08-30T18:25:19.803Z] [worker-us-central1-register-1e68df54-dcc3-45d0-89fe-90f1338c4f53]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"[worker-us-central1-register-1e68df54-dcc3-45d0-89fe-90f1338c4f53]: BUSY"}}
-[info] >  🔍 Starting user registration... {"user":"🔍 Starting user registration...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Starting user registration...\r"}}
-[info] >  🔍 Registration data: email=jagadeeshkakunuri@gmail.com, full_name=jagadeesh kumar {"user":"🔍 Registration data: email=jagadeeshkakunuri@gmail.com, full_name=jagadeesh kumar\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Registration data: email=jagadeeshkakunuri@gmail.com, full_name=jagadeesh kumar\r"}}
-[info] >  🔍 Hashing password... {"user":"🔍 Hashing password...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Hashing password...\r"}}
-[info] >  🔍 Password hashed: ef92b778bafe771e8924... {"user":"🔍 Password hashed: ef92b778bafe771e8924...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Password hashed: ef92b778bafe771e8924...\r"}}
-[info] >  🔍 User data prepared: {'email': 'jagadeeshkakunuri@gmail.com', 'password_hash': 'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', 'full_name': 'jagadeesh kumar', 'is_active': True, 'created_at': '2025-08-30T18:25:19.808055'} {"user":"🔍 User data prepared: {'email': 'jagadeeshkakunuri@gmail.com', 'password_hash': 'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', 'full_name': 'jagadeesh kumar', 'is_active': True, 'created_at': '2025-08-30T18:25:19.808055'}\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 User data prepared: {'email': 'jagadeeshkakunuri@gmail.com', 'password_hash': 'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', 'full_name': 'jagadeesh kumar', 'is_active': True, 'created_at': '2025-08-30T18:25:19.808055'}\r"}}
-[info] >  🔍 Supabase client available, attempting to insert user... {"user":"🔍 Supabase client available, attempting to insert user...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Supabase client available, attempting to insert user...\r"}}
-[info] >  🔍 Attempting to insert user into users table... {"user":"🔍 Attempting to insert user into users table...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Attempting to insert user into users table...\r"}}
-[info] >  🔍 Supabase response: data=[{'id': '63b35ddd-10cc-4220-9d20-6433fa20e8f1', 'email': 'jagadeeshkakunuri@gmail.com', 'password_hash': 'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', 'full_name': 'jagadeesh kumar', 'is_active': True, 'created_at': '2025-08-30T18:25:19.808055+00:00', 'updated_at': '2025-08-30T18:25:55.996201+00:00'}] count=None {"user":"🔍 Supabase response: data=[{'id': '63b35ddd-10cc-4220-9d20-6433fa20e8f1', 'email': 'jagadeeshkakunuri@gmail.com', 'password_hash': 'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', 'full_name': 'jagadeesh kumar', 'is_active': True, 'created_at': '2025-08-30T18:25:19.808055+00:00', 'updated_at': '2025-08-30T18:25:55.996201+00:00'}] count=None\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Supabase response: data=[{'id': '63b35ddd-10cc-4220-9d20-6433fa20e8f1', 'email': 'jagadeeshkakunuri@gmail.com', 'password_hash': 'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', 'full_name': 'jagadeesh kumar', 'is_active': True, 'created_at': '2025-08-30T18:25:19.808055+00:00', 'updated_at': '2025-08-30T18:25:55.996201+00:00'}] count=None\r"}}
-[info] >  ✅ User created successfully: 63b35ddd-10cc-4220-9d20-6433fa20e8f1 {"user":"✅ User created successfully: 63b35ddd-10cc-4220-9d20-6433fa20e8f1\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ User created successfully: 63b35ddd-10cc-4220-9d20-6433fa20e8f1\r"}}
-[info] >  127.0.0.1 - - [30/Aug/2025 18:25:21] "POST / HTTP/1.1" 201 - {"user":"127.0.0.1 - - [30/Aug/2025 18:25:21] \"POST / HTTP/1.1\" 201 -\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 127.0.0.1 - - [30/Aug/2025 18:25:21] \"POST / HTTP/1.1\" 201 -\r"}}
-[debug] [2025-08-30T18:25:21.250Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"Finishing up request with event=pause"}}
-[info] i  functions: Finished "us-central1-register" in 1447.3447ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"Finished \"us-central1-register\" in 1447.3447ms"}}
-[debug] [2025-08-30T18:25:21.251Z] [worker-us-central1-register-1e68df54-dcc3-45d0-89fe-90f1338c4f53]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"[worker-us-central1-register-1e68df54-dcc3-45d0-89fe-90f1338c4f53]: IDLE"}}
-[debug] [2025-08-30T18:25:21.251Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"Finishing up request with event=finish"}}
-[debug] [2025-08-30T18:25:21.251Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"Finishing up request with event=close"}}
-[debug] [2025-08-30T18:25:21.251Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
-[debug] [2025-08-30T18:26:40.929Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\api.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py changed, reloading triggers"}}
-[info] >   * Detected change in 'C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py', reloading {"user":" * Detected change in 'C:\\\\Users\\\\Jagad\\\\OneDrive\\\\Desktop\\\\repos\\\\knowledge-pathways-backend\\\\functions\\\\api.py', reloading\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Detected change in 'C:\\\\Users\\\\Jagad\\\\OneDrive\\\\Desktop\\\\repos\\\\knowledge-pathways-backend\\\\functions\\\\api.py', reloading\r"}}
-[info] >   * Detected change in 'C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py', reloading {"user":" * Detected change in 'C:\\\\Users\\\\Jagad\\\\OneDrive\\\\Desktop\\\\repos\\\\knowledge-pathways-backend\\\\functions\\\\api.py', reloading\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Detected change in 'C:\\\\Users\\\\Jagad\\\\OneDrive\\\\Desktop\\\\repos\\\\knowledge-pathways-backend\\\\functions\\\\api.py', reloading\r"}}
-[info] >   * Detected change in 'C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py', reloading {"user":" * Detected change in 'C:\\\\Users\\\\Jagad\\\\OneDrive\\\\Desktop\\\\repos\\\\knowledge-pathways-backend\\\\functions\\\\api.py', reloading\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Detected change in 'C:\\\\Users\\\\Jagad\\\\OneDrive\\\\Desktop\\\\repos\\\\knowledge-pathways-backend\\\\functions\\\\api.py', reloading\r"}}
-[info] >   * Restarting with watchdog (windowsapi) {"user":" * Restarting with watchdog (windowsapi)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Restarting with watchdog (windowsapi)\r"}}
-[debug] [2025-08-30T18:26:41.943Z] Customer code is not Node
-[debug] [2025-08-30T18:26:41.943Z] Validating python source
-[debug] [2025-08-30T18:26:41.943Z] Building python source
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:26:41.945Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-08-30T18:26:41.970Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
-[debug] [2025-08-30T18:26:42.200Z] stdout: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Lib\site-packages\firebase_functions
-
-[debug] [2025-08-30T18:26:42.221Z] Running admin server with args: ["python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"educourse-6b0c9","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"educourse-6b0c9","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"educourse-6b0c9.firebasestorage.app\",\"projectId\":\"educourse-6b0c9\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json","ADMIN_PORT":"8084"} in C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions
-[debug] [2025-08-30T18:26:42.221Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
-[debug] [2025-08-30T18:26:42.770Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\__pycache__\api.cpython-313.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\__pycache__\\api.cpython-313.pyc changed, reloading triggers"}}
-[info] >  🔍 Looking for .env file at: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\.env {"user":"🔍 Looking for .env file at: C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\.env\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Looking for .env file at: C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\.env\r"}}
-[info] >  📖 Reading .env file... {"user":"📖 Reading .env file...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 📖 Reading .env file...\r"}}
-[info] >  ✅ Loaded: SUPABASE_URL = https://whzmoncahcka... {"user":"✅ Loaded: SUPABASE_URL = https://whzmoncahcka...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_URL = https://whzmoncahcka...\r"}}
-[info] >  ✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs... {"user":"✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs...\r"}}
-[info] >  ✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs... {"user":"✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs...\r"}}
-[info] >  ✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9... {"user":"✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9...\r"}}
-[info] >  🔗 Creating Supabase client... {"user":"🔗 Creating Supabase client...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔗 Creating Supabase client...\r"}}
-[info] >  🔑 Using service role key for enhanced permissions... {"user":"🔑 Using service role key for enhanced permissions...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔑 Using service role key for enhanced permissions...\r"}}
-[error]  * Tip: There are .env files present. Install python-dotenv to use them.
-
-[info]  * Serving Flask app 'serving'
- * Debug mode: off
-
-[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
-[error] 
- * Running on http://127.0.0.1:8084
-Press CTRL+C to quit
-
-[debug] [2025-08-30T18:26:43.780Z] Customer code is not Node
-[debug] [2025-08-30T18:26:43.780Z] Validating python source
-[debug] [2025-08-30T18:26:43.780Z] Building python source
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:26:43.784Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-08-30T18:26:43.806Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
-[debug] [2025-08-30T18:26:43.989Z] stdout: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Lib\site-packages\firebase_functions
-
-[debug] [2025-08-30T18:26:44.004Z] Running admin server with args: ["python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"educourse-6b0c9","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"educourse-6b0c9","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"educourse-6b0c9.firebasestorage.app\",\"projectId\":\"educourse-6b0c9\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json","ADMIN_PORT":"8085"} in C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions
-[debug] [2025-08-30T18:26:44.004Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
-[info] >  ✅ Supabase client created successfully {"user":"✅ Supabase client created successfully\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Supabase client created successfully\r"}}
-[info] >  ✅ Password hashing initialized with SHA-256 {"user":"✅ Password hashing initialized with SHA-256\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Password hashing initialized with SHA-256\r"}}
-[info] >   * Tip: There are .env files present. Install python-dotenv to use them. {"user":" * Tip: There are .env files present. Install python-dotenv to use them.\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Tip: There are .env files present. Install python-dotenv to use them.\r"}}
-[info] >   * Debugger is active! {"user":" * Debugger is active!\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Debugger is active!\r"}}
-[info] >   * Debugger PIN: 983-971-235 {"user":" * Debugger PIN: 983-971-235\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Debugger PIN: 983-971-235\r"}}
-[error] 127.0.0.1 - - [30/Aug/2025 18:26:45] "GET /__/functions.yaml HTTP/1.1" 200 -
-
-[debug] [2025-08-30T18:26:45.844Z] Got response from /__/functions.yaml endpoints:
-  register:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: register
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-params: []
-requiredAPIs: []
-specVersion: v1alpha1
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:26:45] "GET /__/quitquitquit HTTP/1.1" 200 -
-
-[info] +  functions: Loaded functions definitions from source: register. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: register."}}
-[debug] [2025-08-30T18:26:45.896Z] [worker-pool] Shutting down IDLE worker (us-central1-register) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-register)"}}
-[debug] [2025-08-30T18:26:45.896Z] [worker-us-central1-register-1e68df54-dcc3-45d0-89fe-90f1338c4f53]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"[worker-us-central1-register-1e68df54-dcc3-45d0-89fe-90f1338c4f53]: FINISHING"}}
-[debug] [2025-08-30T18:26:45.900Z] [worker-us-central1-register-1e68df54-dcc3-45d0-89fe-90f1338c4f53]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"[worker-us-central1-register-1e68df54-dcc3-45d0-89fe-90f1338c4f53]: exited"}}
-[debug] [2025-08-30T18:26:45.900Z] [worker-us-central1-register-1e68df54-dcc3-45d0-89fe-90f1338c4f53]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-register"},"extension":{},"message":"[worker-us-central1-register-1e68df54-dcc3-45d0-89fe-90f1338c4f53]: FINISHED"}}
-[error]  * Tip: There are .env files present. Install python-dotenv to use them.
-
-[info]  * Serving Flask app 'serving'
- * Debug mode: off
-
-[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:8085
-
-[error] Press CTRL+C to quit
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:26:47] "GET /__/functions.yaml HTTP/1.1" 200 -
-
-[debug] [2025-08-30T18:26:47.771Z] Got response from /__/functions.yaml endpoints:
-  register:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: register
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-params: []
-requiredAPIs: []
-specVersion: v1alpha1
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:26:47] "GET /__/quitquitquit HTTP/1.1" 200 -
-
-[info] +  functions: Loaded functions definitions from source: register. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: register."}}
-[debug] [2025-08-30T18:26:57.279Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\api.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py changed, reloading triggers"}}
-[debug] [2025-08-30T18:26:58.291Z] Customer code is not Node
-[debug] [2025-08-30T18:26:58.291Z] Validating python source
-[debug] [2025-08-30T18:26:58.291Z] Building python source
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:26:58.293Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-08-30T18:26:58.320Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
-[debug] [2025-08-30T18:26:58.560Z] stdout: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Lib\site-packages\firebase_functions
-
-[debug] [2025-08-30T18:26:58.585Z] Running admin server with args: ["python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"educourse-6b0c9","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"educourse-6b0c9","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"educourse-6b0c9.firebasestorage.app\",\"projectId\":\"educourse-6b0c9\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json","ADMIN_PORT":"8084"} in C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions
-[debug] [2025-08-30T18:26:58.586Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
-[debug] [2025-08-30T18:26:58.623Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\api.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py changed, reloading triggers"}}
-[debug] [2025-08-30T18:26:59.425Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\__pycache__\api.cpython-313.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\__pycache__\\api.cpython-313.pyc changed, reloading triggers"}}
-[error]  * Tip: There are .env files present. Install python-dotenv to use them.
-
-[info]  * Serving Flask app 'serving'
- * Debug mode: off
-
-[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:8084
-
-[error] Press CTRL+C to quit
-
-[debug] [2025-08-30T18:27:00.430Z] Customer code is not Node
-[debug] [2025-08-30T18:27:00.431Z] Validating python source
-[debug] [2025-08-30T18:27:00.431Z] Building python source
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:27:00.433Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-08-30T18:27:00.455Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
-[debug] [2025-08-30T18:27:00.715Z] stdout: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Lib\site-packages\firebase_functions
-
-[debug] [2025-08-30T18:27:00.989Z] Running admin server with args: ["python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"educourse-6b0c9","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"educourse-6b0c9","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"educourse-6b0c9.firebasestorage.app\",\"projectId\":\"educourse-6b0c9\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json","ADMIN_PORT":"8085"} in C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions
-[debug] [2025-08-30T18:27:00.989Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
-[error] 127.0.0.1 - - [30/Aug/2025 18:27:02] "GET /__/functions.yaml HTTP/1.1" 200 -
-
-[debug] [2025-08-30T18:27:02.483Z] Got response from /__/functions.yaml endpoints:
-  register:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: register
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-params: []
-requiredAPIs: []
-specVersion: v1alpha1
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:27:02] "GET /__/quitquitquit HTTP/1.1" 200 -
-
-[info] +  functions: Loaded functions definitions from source: register. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: register."}}
-[error]  * Tip: There are .env files present. Install python-dotenv to use them.
-
-[info]  * Serving Flask app 'serving'
- * Debug mode: off
-
-[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:8085
-
-[error] Press CTRL+C to quit
-
-[debug] [2025-08-30T18:27:04.741Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\main.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\main.py changed, reloading triggers"}}
-[debug] [2025-08-30T18:27:05.751Z] Customer code is not Node
-[debug] [2025-08-30T18:27:05.753Z] Validating python source
-[debug] [2025-08-30T18:27:05.753Z] Building python source
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:27:05.759Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-08-30T18:27:05.830Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
-[error] 127.0.0.1 - - [30/Aug/2025 18:27:06] "GET /__/functions.yaml HTTP/1.1" 200 -
-
-[debug] [2025-08-30T18:27:06.020Z] Got response from /__/functions.yaml endpoints:
-  register:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: register
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-params: []
-requiredAPIs: []
-specVersion: v1alpha1
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:27:06] "GET /__/quitquitquit HTTP/1.1" 200 -
-
-[info] +  functions: Loaded functions definitions from source: register. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: register."}}
-[debug] [2025-08-30T18:27:06.258Z] stdout: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Lib\site-packages\firebase_functions
-
-[debug] [2025-08-30T18:27:06.296Z] Running admin server with args: ["python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"educourse-6b0c9","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"educourse-6b0c9","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"educourse-6b0c9.firebasestorage.app\",\"projectId\":\"educourse-6b0c9\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json","ADMIN_PORT":"8084"} in C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions
-[debug] [2025-08-30T18:27:06.297Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
-[debug] [2025-08-30T18:27:07.066Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\main.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\main.py changed, reloading triggers"}}
-[debug] [2025-08-30T18:27:07.394Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\__pycache__\main.cpython-313.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\__pycache__\\main.cpython-313.pyc changed, reloading triggers"}}
-[debug] [2025-08-30T18:27:08.396Z] Customer code is not Node
-[debug] [2025-08-30T18:27:08.410Z] Validating python source
-[debug] [2025-08-30T18:27:08.410Z] Building python source
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:27:08.424Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-08-30T18:27:08.502Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
-[debug] [2025-08-30T18:27:09.909Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\api.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py changed, reloading triggers"}}
-[error]  * Tip: There are .env files present. Install python-dotenv to use them.
-
-[info]  * Serving Flask app 'serving'
- * Debug mode: off
-
-[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:8084
-Press CTRL+C to quit
-
-[debug] [2025-08-30T18:27:10.159Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\__pycache__\api.cpython-313.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\__pycache__\\api.cpython-313.pyc changed, reloading triggers"}}
-[debug] [2025-08-30T18:27:10.458Z] stdout: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Lib\site-packages\firebase_functions
-
-[debug] [2025-08-30T18:27:10.536Z] Running admin server with args: ["python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"educourse-6b0c9","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"educourse-6b0c9","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"educourse-6b0c9.firebasestorage.app\",\"projectId\":\"educourse-6b0c9\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json","ADMIN_PORT":"8084"} in C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions
-[debug] [2025-08-30T18:27:10.536Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
-[debug] [2025-08-30T18:27:10.675Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\__pycache__\api.cpython-313.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\__pycache__\\api.cpython-313.pyc changed, reloading triggers"}}
-[debug] [2025-08-30T18:27:11.706Z] Customer code is not Node
-[debug] [2025-08-30T18:27:11.707Z] Validating python source
-[debug] [2025-08-30T18:27:11.707Z] Building python source
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:27:11.724Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-08-30T18:27:11.760Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
-[debug] [2025-08-30T18:27:12.178Z] stdout: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Lib\site-packages\firebase_functions
-
-[debug] [2025-08-30T18:27:12.213Z] Running admin server with args: ["python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"educourse-6b0c9","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"educourse-6b0c9","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"educourse-6b0c9.firebasestorage.app\",\"projectId\":\"educourse-6b0c9\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json","ADMIN_PORT":"8085"} in C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions
-[debug] [2025-08-30T18:27:12.213Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
-[error] 127.0.0.1 - - [30/Aug/2025 18:27:13] "GET /__/functions.yaml HTTP/1.1" 200 -
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:27:13] "GET /__/functions.yaml HTTP/1.1" 200 -
-
-[debug] [2025-08-30T18:27:13.124Z] Got response from /__/functions.yaml endpoints:
-  login:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: login
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-  register:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: register
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-params: []
-requiredAPIs: []
-specVersion: v1alpha1
-
-[debug] [2025-08-30T18:27:13.134Z] Got response from /__/functions.yaml endpoints:
-  login:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: login
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-  register:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: register
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-params: []
-requiredAPIs: []
-specVersion: v1alpha1
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:27:13] "GET /__/quitquitquit HTTP/1.1" 200 -
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:27:13] "GET /__/quitquitquit HTTP/1.1" 200 -
-
-[info] +  functions: Loaded functions definitions from source: login, register. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: login, register."}}
-[info] +  functions[us-central1-login]: http function initialized (http://127.0.0.1:5001/educourse-6b0c9/us-central1/login). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/educourse-6b0c9/us-central1/login)."}}
-[error]  * Tip: There are .env files present. Install python-dotenv to use them.
-
-[info]  * Serving Flask app 'serving'
- * Debug mode: off
-
-[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:8084
-Press CTRL+C to quit
-
-[error]  * Tip: There are .env files present. Install python-dotenv to use them.
-
-[info]  * Serving Flask app 'serving'
- * Debug mode: off
-
-[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:8085
-
-[error] Press CTRL+C to quit
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:27:16] "GET /__/functions.yaml HTTP/1.1" 200 -
-
-[debug] [2025-08-30T18:27:16.664Z] Got response from /__/functions.yaml endpoints:
-  login:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: login
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-  register:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: register
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-params: []
-requiredAPIs: []
-specVersion: v1alpha1
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:27:16] "GET /__/quitquitquit HTTP/1.1" 200 -
-
-[info] +  functions: Loaded functions definitions from source: login, register. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: login, register."}}
-[debug] [2025-08-30T18:27:16.798Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\api.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\api.py changed, reloading triggers"}}
-[debug] [2025-08-30T18:27:16.817Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\main.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\main.py changed, reloading triggers"}}
-[debug] [2025-08-30T18:27:17.832Z] Customer code is not Node
-[debug] [2025-08-30T18:27:17.833Z] Validating python source
-[debug] [2025-08-30T18:27:17.833Z] Building python source
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:27:17.835Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-08-30T18:27:17.859Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
-[debug] [2025-08-30T18:27:17.888Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\__pycache__\main.cpython-313.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\__pycache__\\main.cpython-313.pyc changed, reloading triggers"}}
-[debug] [2025-08-30T18:27:18.050Z] stdout: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Lib\site-packages\firebase_functions
-
-[debug] [2025-08-30T18:27:18.066Z] Running admin server with args: ["python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"educourse-6b0c9","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"educourse-6b0c9","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"educourse-6b0c9.firebasestorage.app\",\"projectId\":\"educourse-6b0c9\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json","ADMIN_PORT":"8085"} in C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions
-[debug] [2025-08-30T18:27:18.066Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
-[debug] [2025-08-30T18:27:18.821Z] File C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\__pycache__\api.cpython-313.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\__pycache__\\api.cpython-313.pyc changed, reloading triggers"}}
-[debug] [2025-08-30T18:27:19.825Z] Customer code is not Node
-[debug] [2025-08-30T18:27:19.834Z] Validating python source
-[debug] [2025-08-30T18:27:19.834Z] Building python source
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:27:19.855Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-08-30T18:27:19.893Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
-[debug] [2025-08-30T18:27:20.198Z] stdout: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Lib\site-packages\firebase_functions
-
-[debug] [2025-08-30T18:27:20.228Z] Running admin server with args: ["python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"educourse-6b0c9","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"educourse-6b0c9","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"educourse-6b0c9.firebasestorage.app\",\"projectId\":\"educourse-6b0c9\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\Jagad\\AppData\\Roaming\\firebase\\alekhyakakunuri_gmail_com_application_default_credentials.json","ADMIN_PORT":"8085"} in C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions
-[debug] [2025-08-30T18:27:20.229Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
-[error]  * Tip: There are .env files present. Install python-dotenv to use them.
-
-[info]  * Serving Flask app 'serving'
- * Debug mode: off
-
-[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:8085
-Press CTRL+C to quit
-
-[error]  * Tip: There are .env files present. Install python-dotenv to use them.
-
-[info]  * Serving Flask app 'serving'
- * Debug mode: off
-
-[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:8085
-
-[error] Press CTRL+C to quit
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:27:22] "GET /__/functions.yaml HTTP/1.1" 200 -
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:27:22] "GET /__/functions.yaml HTTP/1.1" 200 -
-
-[debug] [2025-08-30T18:27:22.614Z] Got response from /__/functions.yaml endpoints:
-  login:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: login
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-  register:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: register
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-params: []
-requiredAPIs: []
-specVersion: v1alpha1
-
-[debug] [2025-08-30T18:27:22.619Z] Got response from /__/functions.yaml endpoints:
-  login:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: login
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-  register:
-    availableMemoryMb: null
-    concurrency: null
-    entryPoint: register
-    httpsTrigger: {}
-    ingressSettings: null
-    labels: {}
-    maxInstances: null
-    minInstances: null
-    platform: gcfv2
-    secretEnvironmentVariables: []
-    serviceAccountEmail: null
-    timeoutSeconds: null
-params: []
-requiredAPIs: []
-specVersion: v1alpha1
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:27:22] "GET /__/quitquitquit HTTP/1.1" 200 -
-
-[error] 127.0.0.1 - - [30/Aug/2025 18:27:22] "GET /__/quitquitquit HTTP/1.1" 200 -
-
-[info] +  functions: Loaded functions definitions from source: login, register. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: login, register."}}
-[debug] [2025-08-30T18:28:56.819Z] [work-queue] {"queuedWork":["/educourse-6b0c9/us-central1/login-2025-08-30T18:28:56.819Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
-[debug] [2025-08-30T18:28:56.819Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/educourse-6b0c9/us-central1/login-2025-08-30T18:28:56.819Z"],"workRunningCount":1}
-[debug] [2025-08-30T18:28:56.819Z] Accepted request POST /educourse-6b0c9/us-central1/login --> us-central1-login
-[debug] [2025-08-30T18:28:56.824Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2025-08-30T18:28:56.825Z] [functions] Got req.url=/educourse-6b0c9/us-central1/login, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/educourse-6b0c9/us-central1/login, mapping to path=/"}}
-[debug] [2025-08-30T18:28:56.825Z] [worker-pool] Cleaned up workers for us-central1-register: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-register: 1 --> 0"}}
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2025-08-30T18:28:56.837Z] Running command with virtualenv: command="C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\venv\Scripts\activate.bat", args=["","&&","functions-framework"]
-[debug] [2025-08-30T18:28:56.843Z] [worker-pool] addWorker(us-central1-login) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-login)"}}
-[debug] [2025-08-30T18:28:56.844Z] [worker-pool] Adding worker with key us-central1-login, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-login, total=1"}}
-[info] >  🔍 Looking for .env file at: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\.env {"user":"🔍 Looking for .env file at: C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\.env\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Looking for .env file at: C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\.env\r"}}
-[info] >  📖 Reading .env file... {"user":"📖 Reading .env file...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m 📖 Reading .env file...\r"}}
-[info] >  ✅ Loaded: SUPABASE_URL = https://whzmoncahcka... {"user":"✅ Loaded: SUPABASE_URL = https://whzmoncahcka...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_URL = https://whzmoncahcka...\r"}}
-[info] >  ✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs... {"user":"✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs...\r"}}
-[info] >  ✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs... {"user":"✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs...\r"}}
-[info] >  ✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9... {"user":"✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9...\r"}}
-[info] >  🔗 Creating Supabase client... {"user":"🔗 Creating Supabase client...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔗 Creating Supabase client...\r"}}
-[info] >  🔑 Using service role key for enhanced permissions... {"user":"🔑 Using service role key for enhanced permissions...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔑 Using service role key for enhanced permissions...\r"}}
-[info] >  ✅ Supabase client created successfully {"user":"✅ Supabase client created successfully\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Supabase client created successfully\r"}}
-[info] >  ✅ Password hashing initialized with SHA-256 {"user":"✅ Password hashing initialized with SHA-256\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Password hashing initialized with SHA-256\r"}}
-[info] >   * Tip: There are .env files present. Install python-dotenv to use them. {"user":" * Tip: There are .env files present. Install python-dotenv to use them.\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Tip: There are .env files present. Install python-dotenv to use them.\r"}}
-[info] >   * Serving Flask app 'login' {"user":" * Serving Flask app 'login'\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Serving Flask app 'login'\r"}}
-[info] >   * Debug mode: on {"user":" * Debug mode: on\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Debug mode: on\r"}}
-[info] >  WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead. {"user":"WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.\r"}}
-[info] >   * Running on http://127.0.0.1:8497 {"user":" * Running on http://127.0.0.1:8497\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Running on http://127.0.0.1:8497\r"}}
-[info] >  Press CTRL+C to quit {"user":"Press CTRL+C to quit\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m Press CTRL+C to quit\r"}}
-[info] >   * Restarting with watchdog (windowsapi) {"user":" * Restarting with watchdog (windowsapi)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Restarting with watchdog (windowsapi)\r"}}
-[info] >  🔍 Looking for .env file at: C:\Users\Jagad\OneDrive\Desktop\repos\knowledge-pathways-backend\functions\.env {"user":"🔍 Looking for .env file at: C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\.env\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Looking for .env file at: C:\\Users\\Jagad\\OneDrive\\Desktop\\repos\\knowledge-pathways-backend\\functions\\.env\r"}}
-[info] >  📖 Reading .env file... {"user":"📖 Reading .env file...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m 📖 Reading .env file...\r"}}
-[info] >  ✅ Loaded: SUPABASE_URL = https://whzmoncahcka... {"user":"✅ Loaded: SUPABASE_URL = https://whzmoncahcka...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_URL = https://whzmoncahcka...\r"}}
-[info] >  ✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs... {"user":"✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_KEY = eyJhbGciOiJIUzI1NiIs...\r"}}
-[info] >  ✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs... {"user":"✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: SUPABASE_SERVICE_ROLE_KEY = eyJhbGciOiJIUzI1NiIs...\r"}}
-[info] >  ✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9... {"user":"✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Loaded: JWT_SECRET_KEY = docnHffp0ei92C3xZ0L9...\r"}}
-[info] >  🔗 Creating Supabase client... {"user":"🔗 Creating Supabase client...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔗 Creating Supabase client...\r"}}
-[info] >  🔑 Using service role key for enhanced permissions... {"user":"🔑 Using service role key for enhanced permissions...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔑 Using service role key for enhanced permissions...\r"}}
-[info] >  ✅ Supabase client created successfully {"user":"✅ Supabase client created successfully\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Supabase client created successfully\r"}}
-[info] >  ✅ Password hashing initialized with SHA-256 {"user":"✅ Password hashing initialized with SHA-256\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Password hashing initialized with SHA-256\r"}}
-[info] >   * Tip: There are .env files present. Install python-dotenv to use them. {"user":" * Tip: There are .env files present. Install python-dotenv to use them.\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Tip: There are .env files present. Install python-dotenv to use them.\r"}}
-[info] >   * Debugger is active! {"user":" * Debugger is active!\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Debugger is active!\r"}}
-[info] >   * Debugger PIN: 983-971-235 {"user":" * Debugger PIN: 983-971-235\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Debugger PIN: 983-971-235\r"}}
-[info] >  127.0.0.1 - - [30/Aug/2025 18:29:01] "GET /__/health HTTP/1.1" 405 - {"user":"127.0.0.1 - - [30/Aug/2025 18:29:01] \"GET /__/health HTTP/1.1\" 405 -\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m 127.0.0.1 - - [30/Aug/2025 18:29:01] \"GET /__/health HTTP/1.1\" 405 -\r"}}
-[debug] [2025-08-30T18:29:01.091Z] [worker-us-central1-login-23c7c133-0c60-4b82-b130-6906a99f2499]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"[worker-us-central1-login-23c7c133-0c60-4b82-b130-6906a99f2499]: IDLE"}}
-[debug] [2025-08-30T18:29:01.092Z] [worker-pool] submitRequest(triggerId=us-central1-login) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-login)"}}
-[info] i  functions: Beginning execution of "us-central1-login" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"Beginning execution of \"us-central1-login\""}}
-[debug] [2025-08-30T18:29:01.095Z] [worker-us-central1-login-23c7c133-0c60-4b82-b130-6906a99f2499]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"[worker-us-central1-login-23c7c133-0c60-4b82-b130-6906a99f2499]: BUSY"}}
-[info] >  🔍 Starting user login... {"user":"🔍 Starting user login...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Starting user login...\r"}}
-[info] >  🔍 Login data: email=jagadeeshkakunuri@gmail.com {"user":"🔍 Login data: email=jagadeeshkakunuri@gmail.com\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Login data: email=jagadeeshkakunuri@gmail.com\r"}}
-[info] >  🔍 Supabase client available, attempting to find user... {"user":"🔍 Supabase client available, attempting to find user...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Supabase client available, attempting to find user...\r"}}
-[info] >  🔍 Querying user by email... {"user":"🔍 Querying user by email...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Querying user by email...\r"}}
-[info] >  🔍 Supabase response: data=[{'id': '63b35ddd-10cc-4220-9d20-6433fa20e8f1', 'email': 'jagadeeshkakunuri@gmail.com', 'password_hash': 'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', 'full_name': 'jagadeesh kumar', 'is_active': True, 'created_at': '2025-08-30T18:25:19.808055+00:00', 'updated_at': '2025-08-30T18:25:55.996201+00:00'}] count=None {"user":"🔍 Supabase response: data=[{'id': '63b35ddd-10cc-4220-9d20-6433fa20e8f1', 'email': 'jagadeeshkakunuri@gmail.com', 'password_hash': 'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', 'full_name': 'jagadeesh kumar', 'is_active': True, 'created_at': '2025-08-30T18:25:19.808055+00:00', 'updated_at': '2025-08-30T18:25:55.996201+00:00'}] count=None\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Supabase response: data=[{'id': '63b35ddd-10cc-4220-9d20-6433fa20e8f1', 'email': 'jagadeeshkakunuri@gmail.com', 'password_hash': 'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', 'full_name': 'jagadeesh kumar', 'is_active': True, 'created_at': '2025-08-30T18:25:19.808055+00:00', 'updated_at': '2025-08-30T18:25:55.996201+00:00'}] count=None\r"}}
-[info] >  🔍 User found: 63b35ddd-10cc-4220-9d20-6433fa20e8f1 {"user":"🔍 User found: 63b35ddd-10cc-4220-9d20-6433fa20e8f1\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 User found: 63b35ddd-10cc-4220-9d20-6433fa20e8f1\r"}}
-[info] >  🔍 Verifying password... {"user":"🔍 Verifying password...\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m 🔍 Verifying password...\r"}}
-[info] >  127.0.0.1 - - [30/Aug/2025 18:29:02] "POST / HTTP/1.1" 200 - {"user":"127.0.0.1 - - [30/Aug/2025 18:29:02] \"POST / HTTP/1.1\" 200 -\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m 127.0.0.1 - - [30/Aug/2025 18:29:02] \"POST / HTTP/1.1\" 200 -\r"}}
-[debug] [2025-08-30T18:29:02.156Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"Finishing up request with event=pause"}}
-[info] i  functions: Finished "us-central1-login" in 1061.8012ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"Finished \"us-central1-login\" in 1061.8012ms"}}
-[debug] [2025-08-30T18:29:02.158Z] [worker-us-central1-login-23c7c133-0c60-4b82-b130-6906a99f2499]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"[worker-us-central1-login-23c7c133-0c60-4b82-b130-6906a99f2499]: IDLE"}}
-[debug] [2025-08-30T18:29:02.159Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"Finishing up request with event=finish"}}
-[debug] [2025-08-30T18:29:02.159Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"Finishing up request with event=close"}}
-[debug] [2025-08-30T18:29:02.160Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
-[info] >  ✅ Password verified successfully {"user":"✅ Password verified successfully\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-login"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ Password verified successfully\r"}}
